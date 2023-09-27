@@ -5,20 +5,23 @@
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/1ef88bc824.js" crossorigin="anonymous"></script>
-  <head>
+  </head>
   <body>
     <header>
       <div  id="logo"> 
-      <i class="fa-solid fa-code"></i>
-      <h2>Sag.dev</h2>
+        <i class="fa-solid fa-code"></i>
+        <h2>Sag.dev</h2>
+        </div>
       </div>
 
+      <i class="fa-solid fa-bars" id="nav-toggle" onclick="toggleNav()"></i>
+    
       <nav id="navbar">
         <ul>
-          <li><a href="#welcome-section">Home</a></li>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#welcome-section" onclick="closeNav()">Home</a></li>
+          <li><a href="#about-me" onclick="closeNav()">About</a></li>
+          <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+          <li><a href="#contact" onclick="closeNav()">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -27,20 +30,22 @@
       <section id="welcome-section">
 
         <div class="upper">
-          <div class="welcome-section-text">
-          <h1>Front-End Web Developer👋</h1>
-          <p>Hi, I'm Patrick Sagum, a passionate Front-end Developer based in Phillipines, Negros Occidental, Bacolod City📍</p>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-brands fa-facebook"></i>
-          </div>
-          <div><img src="https://storage.googleapis.com/k-react.appspot.com/images/profilePicture/S9pCIFcoBkuBm2SHIvLG_300x300.jpg" id="profile-img"></div>
-        </div>
-        <div class="stack">
 
+          <div class="welcome-section-text">
+            <h1>Front-End Web Developer</h1>
+            <p>Hi, I'm Patrick Sagum, a passionate Front-end Developer based in Phillipines, Negros Occidental, Bacolod City📍</p>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+
+          <div><img src="https://storage.googleapis.com/k-react.appspot.com/images/profilePicture/S9pCIFcoBkuBm2SHIvLG_300x300.jpg" id="profile-img"></div>
+
+        </div>
+
+        <div class="stack">
           <p>Tech Stack</p>
           <p>|</p>
-
           <ul>
             <li><i class="fa-brands fa-html5" style="color: #e34c26;"></i></li>
 
@@ -48,77 +53,28 @@
 
             <li><i class="fa-brands fa-js" style="color: #f0db4f;"></i></li>
 
-            <li><i class="fa-brands fa-react" style="color: #61dbfb;"></i><li>
-          <ul>
-        </div>
-      </section>
-
-
-      <section id="about-me">
-
-        <div id="about-me-container">
-
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQfwAejJm79WjyQjM4Zf2UhJoIBj0WQOt0tA&usqp=CAU" id="about-me-img">
-
-          <div>
-
-            <h2>ABOUT ME</h2>
-
-            <div>
-            <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem m</p>
-            <div class="button-container"><button id="cv">View CV</button></div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-      <section id="projects"> 
-        <h2>PROJECTS</h2>
-        <div class="project">
-          <div class="project-img"><img src="#"></div>
-          <div class="project-details"></div>
-        </div>
-        <div class="project">
-          <div class="project-details"></div>
-          <div class="project-img"><img src="#"></div>
-        </div>
-        <div class="project">
-          <div class="project-img"><img src="#"></div>
-          <div class="project-details"></div>
-        </div>
-        <div class="project">
-          <div class="project-details"></div>
-          <div class="project-img"><img src="#"></div>
+            <li><i class="fa-brands fa-react" style="color: #61dbfb;"></i></li>
+          </ul>
         </div>
 
       </section>
 
-      <section id="contact">
-<h2>Let's Work Together....</h2>
-<p><i>How do you take yout coffee?</i></p>
 
-
-<div class="contact-icon-container">
-   <a href="#" class="contact-details"><i class="fa-brands fa-facebook"></i></a>
-   <a href="#" idclass="contact-details"><i class="fa-brands fa-github"></i></a>
-   <a href="#" class="contact-details"><i class="fa-brands fa-twitter"></i></a>
-   <a href="#" class="contact-details"><i class="fa-solid fa-at"></i></a>
-   <a href="#" class="contact-details"> <i class="fa-solid fa-mobile-screen"></i></a>
-</div>
+      
     </main>
 
-</section>
 
+  <script>
+    function toggleNav() {
+      var navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active")
+    }
 
-  <footer>
+    function closeNav() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.remove("active");
+    }
 
-<p>Copyright © 2023. All rights are reserved</p>
- 
-
-  </footer>
- 
+  </script>
   </body>
 </html>
