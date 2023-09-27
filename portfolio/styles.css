@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -133,6 +134,7 @@ header {
 
   #welcome-section {
     margin-top: 100px;
+    height: auto;
   }
 
   .welcome-section-text {
@@ -209,13 +211,33 @@ header {
 @media screen and (max-width: 550px){
   #profile-img {
     height: auto;
-    width: 50vw;
+    width: 240px;
   }
 
   #welcome-section {
     width: 95vw;
-    text-wrap: wrap;
     margin-inline: auto;
+  }
+
+  .welcome-section-text {
+    width: 100%
+  }
+
+  .welcome-section-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .welcome-section-text p {
+    font-size: .8rem;
+  }
+
+
+  .welcome-section-text h1, .welcome-section-text p {
+    word-wrap: break-word;
+  }
+
+  .stack {
+    width: 95vw;
   }
 
 }
