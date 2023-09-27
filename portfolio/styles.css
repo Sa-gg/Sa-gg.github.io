@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 
 * {
@@ -205,4 +204,18 @@ header {
     align-items: center;
   }
   
+}
+
+@media screen and (max-width: 550px){
+  #profile-img {
+    height: auto;
+    width: 50vw;
+  }
+
+  #welcome-section {
+    width: 95vw;
+    text-wrap: wrap;
+    margin-inline: auto;
+  }
+
 }
