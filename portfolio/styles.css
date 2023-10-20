@@ -95,11 +95,18 @@ header {
   margin-bottom: 1rem;
 }
 
-#profile-img {
+.profile-img-container {
+  width: 300px;
   height: 300px;
-  width: auto;
+  overflow: hidden;
   border-radius: 50%;
-  box-shadow: 0 0 10px 2px black;
+  border: 3px solid black;
+}
+
+#profile-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .stack {
@@ -336,7 +343,7 @@ footer {
 @media screen and (max-width: 700px) {
   #nav-toggle {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   header {
@@ -373,9 +380,9 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  #profile-img {
-    height: auto;
-    width: 240px;
+  .profile-img-container {
+    height: 280px;
+    width: 280px;
   }
 
   #welcome-section {
