@@ -39,7 +39,7 @@
             <a href="https://www.facebook.com/patrick.sagum.144?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
           </div>
 
-          <div class="profile-img-container"><img src="sag-pp.png" id="profile-img"></div>
+          <div class="profile-img-container"><img src="https://preview.redd.it/230523-haerin-phoning-photo-update-v0-3euavwbjmk1b1.jpg?width=640&crop=smart&auto=webp&s=28f559d6d4ae1026cf1ad3227b7e5e53fd4fc8d3" id="profile-img"></div>
 
         </div>
 
@@ -75,7 +75,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, impedit magni quod quisquam nobis veritatis, suscipit nihil dolorem vel dignissimos illo amet ipsa minima maiores facilis! Eaque hic eius vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, impedit magni quod quisquam nobis veritatis, suscipit nihil dolorem vel dignissimos illo amet ipsa minima maiores facilis! Eaque hic eius vero.
 
 </p>
-            <div class="button-container"><button id="cv">View CV</button></div>
+            <div class="button-container"><button id="cv" onlick="viewPDF()">Click to View CV</button></div>
             </div>
 
           </div>
@@ -146,8 +146,23 @@
     navbar.classList.remove("active");
     }
 
+
+    function viewPDF() {
+    // Replace 'YOUR_GOOGLE_DRIVE_PDF_LINK' with the link to your PDF file on Google Drive
+    const pdfLink = 'https://drive.google.com/file/d/1ehUxkp4Ct0lFaSs6IZ8oCE674GJ1ho4K/view?usp=sharing';
+
+    // Create an iframe to embed the Google Docs Viewer
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://docs.google.com/viewer?url=${encodeURIComponent(pdfLink)}&embedded=true`;
+
+    // Replace the content of the body with the iframe
+    document.body.innerHTML = '';
+    document.body.appendChild(iframe);
+  }
+
+
   </script>
   </body>
 </html>
 
-<!-- <img src="https://preview.redd.it/230523-haerin-phoning-photo-update-v0-3euavwbjmk1b1.jpg?width=640&crop=smart&auto=webp&s=28f559d6d4ae1026cf1ad3227b7e5e53fd4fc8d3" id="profile-img"> -->
+<!-- <img src="sag-pp.png" id="profile-img"> -->

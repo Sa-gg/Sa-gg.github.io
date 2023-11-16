@@ -184,6 +184,12 @@ header {
   justify-content: center;
 }
 
+#cv {
+  font-family: Poppins;
+  height: 2rem;
+  width: 8rem;
+}
+
 /* PROJECTS */
 #projects {
   margin: 10rem auto;
@@ -207,9 +213,10 @@ header {
   margin-inline: auto;
   width: 900px;
   height: 400px;
-  background: blue;
+  background: white;
+  box-shadow: 0 0px 10px grey;
   gap: 1rem;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 
 .project-img {
@@ -221,10 +228,10 @@ header {
 .project-img > img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .project-details {
-  background: red;
   width: 340px;
   height: 280px;
   padding: 1rem;
@@ -266,7 +273,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3.5rem 0;
+  padding: 1.9rem 0;
 }
 
 /* RESPONSIVE */
@@ -380,6 +387,14 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
+  header {
+    height: 60px;
+  }
+
+  #nav-toggle {
+    font-size: 1.7rem;
+  }
+
   .profile-img-container {
     height: 280px;
     width: 280px;
