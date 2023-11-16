@@ -189,6 +189,7 @@ header {
   height: 2rem;
   width: 8rem;
   cursor: pointer;
+  
 }
 
 /* PROJECTS */
@@ -224,12 +225,15 @@ header {
   /* background: yellow; */
   width: 450px;
   height: 300px;
+  
 }
 
 .project-img > img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0px 0px 5px 2px rgba(61, 60, 60, 0.5);
+        
 }
 
 .project-details {
@@ -343,12 +347,18 @@ footer {
     border-radius: 5%;
   }
 
+  .project-details {
+    width: 450px;
+  }
+
+
+
   .project.reverse {
     flex-direction: column-reverse;
   }
 
   /* CONTACT */
-  #contact h2 {
+   #contact h2 {
     font-size: 2.8rem;
     line-height: 1;
     margin-bottom: 1rem;
@@ -403,14 +413,10 @@ footer {
     height: 60px;
   }
 
-  #navbar {
-    top: 60px;
-    height: calc(100vh - 60px);
+  #nav-toggle {
+    font-size: 1.7rem
   }
 
-  #nav-toggle {
-    font-size: 1.7rem;
-  }
 
   .profile-img-container {
     height: 280px;
@@ -481,8 +487,7 @@ footer {
     margin: 0.2rem;
   }
 
-  #contact .fa-brands,
-  #contact .fa-solid {
+  #contact .fa-brands, #contact .fa-solid {
     font-size: 1.8rem;
   }
 }
