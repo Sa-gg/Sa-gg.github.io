@@ -403,6 +403,11 @@ footer {
     height: 60px;
   }
 
+  #navbar {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+
   #nav-toggle {
     font-size: 1.7rem;
   }
