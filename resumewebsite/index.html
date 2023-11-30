@@ -1,0 +1,880 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="icon" href="https://drive.google.com/uc?id=1rz-jQrk-R9pQlZaNgIW970zPYmbBAAAD" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/1ef88bc824.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>SAG Resume</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Karla&family=Poppins&display=swap");
+
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(51, 49, 49);
+}
+
+body {
+  background-color: ghostwhite;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 170px;
+}
+
+/* NAVBAR */
+.nav-bar > ul {
+  list-style-type: none;
+}
+
+.nav-bar > ul > li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.nav-bar > ul > li > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0);
+  font-size: 1rem;
+}
+
+.nav-bar > ul > li > a:hover {
+  color: #0d6efd;
+}
+
+.content-section {
+  display: none;
+  width: 80%;
+  margin: auto;
+}
+
+.active {
+  display: block;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
+  height: 70px;
+  width: auto;
+}
+
+.logo > h2 {
+  font-size: 2rem;
+  color: black;
+}
+
+#highligthed-contact {
+  margin-left: 10px;
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+#highligthed-contact:hover {
+  background-color: #0d6dfdcc;
+}
+
+/* PROFILE */
+.profile-container {
+  display: flex;
+  height: 550px;
+}
+
+.profile {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about-me {
+  width: 55%;
+}
+
+.profile-pic-container {
+  height: 170px;
+  width: auto;
+  border-radius: 50%;
+  border: 3px solid rgb(66, 66, 66);
+  overflow: hidden;
+}
+
+.profile-pic {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  border: 1px solid white;
+  transition: opacity 0.3s, transform 0.3s;
+  border-radius: 50%;
+}
+
+.profile > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #323232;
+}
+
+.profile p {
+  font-family: Courier New, Courier, monospace;
+  font-weight: 600;
+  position: relative;
+  font-size: 1rem;
+}
+
+.profile p::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  background-color: ghostwhite;
+  animation: typing 2s steps(31) alternate forwards, line 0.4s infinite;
+  width: 100%;
+}
+
+@keyframes typing {
+  to {
+    width: 0%;
+  }
+}
+
+@keyframes line {
+  50% {
+    color: transparent;
+  }
+}
+
+.icon {
+  display: flex;
+  gap: 1.9rem;
+}
+
+.icon > i {
+  color: rgb(51, 49, 49);
+  font-size: 2.5rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 40px;
+  padding-inline: 30px;
+}
+
+.about-me p {
+  line-height: 1.5;
+}
+
+.about-me > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  padding: 0.5rem;
+  background: none;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  font-size: 1.05rem;
+  outline: none;
+  appearance: none;
+  border-radius: 6px;
+}
+
+#btn:hover {
+  background-color: #0d6dfdd8;
+  color: white;
+  cursor: pointer;
+}
+
+/* SKILLS */
+#skills {
+  height: 550px;
+  width: 55%;
+}
+
+#skills > h1 {
+  font-size: 2.5rem;
+  padding: 2rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.skills-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-container1 {
+  width: 400px;
+  margin-left: 3rem;
+}
+
+.skills-container1 > h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skills-container1 > ul {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* EDUCATION */
+#education {
+  width: 55%;
+  height: 550px;
+  position: relative;
+}
+
+#education h1 {
+  font-size: 2.5rem;
+  padding: 2rem 0 1rem;
+}
+
+.education-container {
+  display: flex;
+  width: 94%;
+  position: absolute;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.education-box {
+  border-left: 0.2rem solid rgb(51, 49, 49);
+}
+
+.education-content {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.education-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.7rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: rgb(51, 49, 49);
+  border-radius: 50%;
+}
+
+.education-content > .content {
+  position: relative;
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(51, 49, 49);
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.education-content > .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(51, 49, 49, 0.171);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.education-content > .content:hover::before {
+  width: 100%;
+}
+
+.education-content > .content > .year {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.education-content > .content > .year i {
+  padding-right: 0.5rem;
+}
+
+.education-content > .content h3 {
+  font-size: 1.3rem;
+}
+
+.education-content > .content p {
+  font-size: 0.9rem;
+  padding-top: 0.2rem;
+}
+
+/* EXPERIENCE */
+#experience {
+  height: 550px;
+  padding: 3rem;
+  padding-top: 1.2rem;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.experience-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.experience-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.experience-col > h1 {
+  font-size: 2rem;
+}
+
+.experience-box {
+  border-left: 0.2rem solid rgb(51, 49, 49);
+}
+
+.experience-content {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experience-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.7rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: rgb(51, 49, 49);
+  border-radius: 50%;
+}
+
+.experience-content > .content {
+  position: relative;
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(51, 49, 49);
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.experience-box .experience-content:last-child .content {
+  margin-bottom: 0;
+}
+
+.experience-content > .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(51, 49, 49, 0.171);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.experience-content > .content:hover::before {
+  width: 100%;
+}
+
+.experience-content > .content > .year {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.experience-content > .content > .year i {
+  padding-right: 0.5rem;
+}
+
+.experience-content > .content h3 {
+  font-size: 1.4rem;
+}
+
+.experience-content > .content p {
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project {
+  width: 75%;
+  height: 13.5rem;
+  border: 0.2rem solid rgb(51, 49, 49);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.project > a > img {
+  width: 100%;
+}
+
+.project-one::before,
+.project-two::before {
+  pointer-events: none;
+}
+
+.project-one::before {
+  content: "Portfolio Website";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  background-color: rgba(51, 49, 49, 0.74);
+  transition: 0.5s;
+}
+
+.project-one:hover::before {
+  height: calc(100% + 2rem);
+  color: white;
+}
+
+.project-two::before {
+  content: "Project 2";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  background-color: rgba(51, 49, 49, 0.74);
+  transition: 0.5s;
+}
+
+.project-two:hover::before {
+  height: calc(100% + 2rem);
+  color: white;
+}
+
+/* CONTACT */
+#contact {
+  width: 55%;
+  margin: 0;
+}
+
+.contact-container {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 5rem;
+  padding-top: 2.5rem;
+}
+
+.contact-container > p {
+  font-weight: 600;
+}
+
+.con-icons {
+  margin-bottom: 0.3rem;
+}
+
+.con-icons > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.con-icons > div > i {
+  font-family: 1.1rem;
+}
+
+.con-icons > div > i {
+  width: 40px;
+  text-align: center;
+}
+
+.con-icons > div > p {
+  margin-bottom: 3px;
+}
+
+.form-group {
+  margin-top: 0.8rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(189, 182, 182);
+  padding: 5px;
+  color: black;
+  font-size: 1rem;
+}
+
+textarea.form-control {
+  resize: none;
+  height: 7rem;
+}
+
+.form-control:hover {
+  border: 1px solid #0d6dfdd8;
+}
+
+.con-btn {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: none;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  font-size: 1.05rem;
+  outline: none;
+  appearance: none;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.con-btn:hover {
+  background-color: #0d6dfdd8;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer > div {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+footer > p {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+footer > div > a > i {
+  padding: 1rem;
+}
+
+.fa-facebook {
+  color: #1877f2;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://drive.google.com/uc?id=1eanIIyaPBxNZi1QQ9Adx1qigY7m-jmMG" alt="logo" />
+        <h2></h2>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#profile" onclick="toggleContent('profile')">Profile</a></li>
+          <li><a href="#skills" onclick="toggleContent('skills')">Skills</a></li>
+          <li><a href="#education" onclick="toggleContent('education')">Education</a></li>
+          <li><a href="#experience" onclick="toggleContent('experience')">Experience</a></li>
+          <li><a href="#contact" onclick="toggleContent('contact')" id="highligthed-contact" >Let's Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile" class="content-section active">
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-pic-container">
+                <img src="https://i.pinimg.com/736x/be/e9/48/bee948d69ba5a8aa32d5aa6ce81af029.jpg" alt="" class="profile-pic" />
+                </div>
+
+                <h1>Patrick R. Sagum</h1>
+                <p>A Passionate Full Stack Developer.</p>
+                <div class="icon">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-git"></i>
+                </div>
+            </div>
+            <div class="about-me">
+            <p>
+              As a dedicated full-stack developer, I bring a wealth of expertise
+              in web design and development to the table. Currently seeking new
+              opportunities, I specialize in creating seamless and responsive
+              websites, ensuring a comprehensive user experience from front-end
+              design to back-end functionality.
+            </p>
+            <p>
+              If you're in need of a skilled professional to enhance your online
+              presence or spearhead the development of a new website, I'm here
+              to help. Please use the button below to reach out, and we can
+              discuss your project requirements in detail. I'm excited about the
+              prospect of leveraging my full-stack development skills to
+              contribute to the success of your endeavors. Looking forward to
+              the opportunity!
+            </p>
+            <div><button id="btn"  onclick="toggleContent('contact')">Contact Me</button></div>
+          </div>
+
+          <section id="skills" class="content-section">
+            <h1>My Skills</h1>
+            <div class="skills-container">
+              <div class="skills-container1">
+                <h2>Front-End Development</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+              
+                <h2>Back-End Development</h2>
+                <ul>
+                    <li>Java</li>
+                </ul>
+
+                <h2>Version Control</h2>
+                <ul>
+                    <li>Git</li>
+                    <li>Github</li>
+                </ul>
+
+                
+                </div>
+
+                <div class="skills-container1">
+                    <h2>Soft Skills</h2>
+                <ul>
+                    <li>Effective Communication</li>
+                    <li>Strong Problem Solving</li>
+                    <li>Attention to Detail</li>
+                    <li>Collaborative Team Player</li>
+                    <li>Adaptable Learner</li>
+                    <li>Time Management Excellence</li>
+                    <li>Customer-Centric Approach</li>
+                </ul>
+
+                    <h2>Others</h2>
+                <ul>
+                    <li>Basic Computer Troubleshooting</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="education" class="content-section">
+            <h1>Education</h1>  
+            <div class="education-container">
+                  <div class="education-col">
+                    <div class="education-box">
+                      <div class="education-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2017 - 2021</div>
+                          <h3>Junior High School - Negros Occidental High School</h3>
+                          <p>- Araneta-Hernaez Street, Barangay 39, Bacolod City, Negros Occidental, 6100, Philippines </p>
+                        </div>
+                      </div>
+
+                      <div class="education-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2021 - 2023</div>
+                          <h3>Senior High School (ICT) - Negros Occidental High School</h3>
+                          <p>- Araneta-Hernaez Street, Barangay 39, Bacolod City, Negros Occidental, 6100, Philippines </p>
+                        </div>
+                      </div>
+
+                      <div class="education-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2023 - Present</div>
+                          <h3>Bachelor of Science in Information Technology - Carlos Hilado Memorial State University</h3>
+                          <p>- Barangay Alijis, Bacolod City, Negros Occidental, 6100, Philippines</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+  
+          <section id="contact" class="content-section">
+            <div class="contact-container">
+                <div class="con-icons">
+                    <div><i class="fa-solid fa-location-dot"></i><p>Negros Occidental, PH</p></div>
+                    <div><i class="fa-solid fa-envelope"></i></i><p>sagum.patrick.r@gmail.com</p></div>
+                    <div><i class="fa-solid fa-phone"></i><p>+639511617493</p></div>
+                </div>
+
+                 <p>Feel free to contact me or you can fill up the form for inquiries</p>
+
+                <form action="#" id="contact-form">
+                <div class="form-group">
+                    <label for="fullName">Name</label>
+                    <input  name="fullName" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input  name="Email" type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" type="text" cols="50" rows="4" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="con-btn">Submit</button>
+                </form>
+            </div>
+         </section>
+
+        </div>
+      </section>
+
+      <section id="experience" class="content-section">
+        <div class="experience-container">
+          <div class="experience-row">
+            <div class="experience-col">
+              <h1>Work Experience</h1>
+                    <div class="experience-box">
+                      <div class="experience-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2020 - Present</div>
+                          <h3>Computer Shop Sales Associate | VERK Computer Shop</h3>
+                          <p>Maintained records, proficiently troubleshoot technical issues, resolved complaints, conducted computer repairs and upgrades for high customer satisfaction.</p>
+                        </div>
+                      </div>
+
+                      <div class="experience-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2016 - Present</div>
+                          <h3>Sales Associate | SAGUM Sari-Sari Store</h3>
+                          <p>Assisted customers, managed inventory, maintained store organization, developed product knowledge, and created store</p>
+                        </div>
+                      </div>
+
+                      <div class="experience-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> #### - ####</div>
+                          <h3>Vacant | Vacant</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi molestiae nobis iste quo earum, perferendis quae facilis totam est, eligendi saepe omnis ut odio voluptatibus in fugit corporis fuga.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+              <div class="experience-col">
+                <h1>Projects</h1>
+                <div class="projects">
+                  <div class="project project-one"><a href="https://sa-gg.github.io/portfolio/" target="_blank"><img src="https://drive.google.com/uc?id=1c6bbX8WaUA5wDtceorLmd4bQSmFN0KUq" alt=""></a></div>
+                  <div class="project project-two"></div>
+                </div>
+              </div>
+          </div>
+                
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="https://github.com/Sa-gg" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/patrick-sagum-b5589b248/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/patrick.sagum.144?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <p>Copyright © 2023. All rights are reserved</p>
+    </footer>
+
+    <script>
+    // SWITCH SECTION TAB FUNCTION
+    function toggleContent(page) {
+        var contentSections = document.querySelectorAll(".content-section");
+
+        contentSections.forEach((section) => {
+          section.classList.remove("active");
+        });
+
+        if (page != 'experience') {
+          document.getElementById('profile').classList.add('active');
+        }
+
+        if (page != profile) {
+          document.querySelector('.about-me').style.display = 'none';
+        } 
+
+        document.getElementById(page).classList.add('active'); 
+      
+        if (page == 'profile') {
+          document.querySelector('.about-me').style.display = 'flex';
+        }
+
+      }
+          
+    // PROFILE PICTURE ANIMATION
+    document.addEventListener("DOMContentLoaded", function () {
+        var profilePic = document.querySelector(".profile-pic");
+
+        profilePic.addEventListener("mouseenter", function () {
+          profilePic.src = "https://i.pinimg.com/736x/5d/d8/3d/5dd83d282c491314a81212a0fb4c1fa2.jpg"; 
+          profilePic.style.transform = "rotateY(calc(360deg * 2))";
+        });
+
+        profilePic.addEventListener("mouseleave", function () {
+          profilePic.src = "https://i.pinimg.com/736x/be/e9/48/bee948d69ba5a8aa32d5aa6ce81af029.jpg"; // Specify the path to your normal image
+          profilePic.style.transform = "rotateY(0deg)";
+        });
+      });
+    </script>
+  </body>
+</html>
