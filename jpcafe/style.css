@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 9%;
+    background-color: white;
+    height: 90px;
+    width: 100vw;
+    font-size: 1.1rem;
+    
+}
+
+.logo > img {
+    height: 90px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > a {
+    margin-inline: 1rem;
+}
+
+nav a:first-child {
+    margin-left: 0;
+}
+
+header > a {
+    padding: .5rem 1rem;
+    border: .2rem solid #443;
+    color: #443;
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+}
+
+/* HOME  */
+
+#home {
+    background: url(img/crackwhitebg.png);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    padding-top: 12rem;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.home-container > * {
+     height: 500px;
+}
+
+.home-text {
+    width: 600px;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.home-text > p {
+    margin-bottom: 1.5rem;
+}
+
+.home-text > a {
+    padding: .5rem 1rem;
+    border: .2rem solid #443;
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    color: #443;
+    font-size: 1.2rem;
+    text-decoration: none;   
+}
+
+.home-img {
+    height: 600px;
+}
+
+/* ABOUT */
+#about {
+    background: url(img/cracklattebg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -60px;
+}
+
+/* MENU */
+#menu {
+    background: url(img/crackwhitebg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -60px;
+}
+
+/* gallery */
+#gallery {
+    background: url(img/crackblackbg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -60px;
+}
+
