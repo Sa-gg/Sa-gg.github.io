@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #320001;
 }
 
 html {
@@ -35,22 +36,32 @@ header {
 
 header a {
     text-decoration: none;
-    color: #443;
+    color: #320001;
 }
 
 nav > a {
     margin-inline: .8rem;
 }
 
+nav > a:hover {
+    color: #fb6503;
+}
+
 nav a:first-child {
     margin-left: 0;
 }
 
-header > a {
+.btn {
     padding: .5rem 1rem;
-    border: .2rem solid #443;
+    border: .2rem solid #320001;
     color: #443;
     border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    text-decoration: none;
+}
+
+.bookTable:hover {
+    border-color: #EF7D01;
+    color: #EF7D01;
 }
 
 /* HOME  */
@@ -94,16 +105,18 @@ section {
 }
 
 .home-text > a {
-    padding: .5rem 1rem;
-    border: .2rem solid #443;
-    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
-    color: #443;
     font-size: 1.2rem;
-    text-decoration: none;   
 }
 
 .home-img {
     height: 300px;  
+}
+
+
+.viewMenu {
+    background-color: #fb6503;
+    border: none;
+    color: white;
 }
 
 /* ABOUT */
@@ -113,7 +126,7 @@ section {
 
 .heading > h1 {
     font-size: 5rem;
-    -webkit-text-stroke: 0.01rem rgba(68, 68, 51, 0.281);
+    -webkit-text-stroke: 0.01rem #32000125;
     color: transparent;
     margin-bottom: .5rem;
     position: relative;
@@ -125,7 +138,8 @@ section {
     position: absolute;
     left: 25%;
     top: 35%;
-    color: #443;
+    color: #320001;
+    -webkit-text-stroke-color: transparent;
     font-size:  1.6rem;
     
 }
@@ -133,7 +147,7 @@ section {
 #about {
     background: url(img/cracklattebg.png);
     background-size: cover;
-    min-height: 100vh;
+    min-height: auto;
     width: 100vw;
     margin-top: -100px;
     padding-top: 5rem;
@@ -144,10 +158,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.about-container > * {
 
 }
 
@@ -165,6 +175,7 @@ section {
 .about-text > p {
     margin-top: .5rem;
     line-height: 1.5;
+    margin-bottom: 1.5rem;
 }
 
 .about-img {
@@ -173,21 +184,33 @@ section {
     height: 370px;
 }
 
+.readMore {
+    margin-top: 3rem;
+    background-color: #fb6503;
+    color: white;
+    border: none;
+}
+
+.viewLoc {
+    border: none;
+    color: #fb6503;
+}
+
 /* MENU */
-#menu {
+/* #menu {
     background: url(img/crackpwhitebg.png);
     background-size: cover;
     height: 100vh;
     width: 100vw;
     margin-top: -60px;
-}
+} */
 
 /* gallery */
-#gallery {
+/* #gallery {
     background: url(img/crackblackbg.png);
     background-size: cover;
     height: 100vh;
     width: 100vw;
     margin-top: -60px;
-}
+} */
 
