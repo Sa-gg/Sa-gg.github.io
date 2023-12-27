@@ -158,7 +158,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .about-text {
@@ -194,16 +193,23 @@ section {
 .viewLoc {
     border: none;
     color: #fb6503;
+    margin-left: .5rem;
+}
+
+.viewLoc:hover {
+    background-color: #fb6503;
+    color: white;
 }
 
 /* MENU */
-/* #menu {
+#menu {
     background: url(img/crackpwhitebg.png);
     background-size: cover;
     height: 100vh;
     width: 100vw;
     margin-top: -60px;
-} */
+}
+
 
 /* gallery */
 /* #gallery {
