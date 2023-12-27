@@ -24,21 +24,21 @@ header {
     background-color: white;
     height: 90px;
     width: 100vw;
-    font-size: 1.1rem;
+    font-size: 1rem;
     
 }
 
 .logo > img {
-    height: 90px;
+    height: 70px;
 }
 
 header a {
     text-decoration: none;
-    color: black;
+    color: #443;
 }
 
 nav > a {
-    margin-inline: 1rem;
+    margin-inline: .8rem;
 }
 
 nav a:first-child {
@@ -54,24 +54,29 @@ header > a {
 
 /* HOME  */
 
+section {
+    padding: 2rem 9%;
+}
+
 #home {
     background: url(img/crackwhitebg.png);
     background-size: cover;
     min-height: 100vh;
     width: 100vw;
     padding-top: 12rem;
+    padding-bottom: 150px;
 }
 
 .home-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 8rem;
     flex-wrap: wrap;
 }
 
 .home-container > * {
-     height: 500px;
+     height: 400px;
 }
 
 .home-text {
@@ -97,21 +102,79 @@ header > a {
 }
 
 .home-img {
-    height: 600px;
+    height: 300px;  
 }
 
 /* ABOUT */
+.heading {
+    text-align: center;
+}
+
+.heading > h1 {
+    font-size: 5rem;
+    -webkit-text-stroke: 0.01rem rgba(68, 68, 51, 0.281);
+    color: transparent;
+    margin-bottom: .5rem;
+    position: relative;
+    margin-inline: auto;
+    display: inline-block;
+}
+
+.heading > h1 > span {
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    color: #443;
+    font-size:  1.6rem;
+    
+}
+
 #about {
     background: url(img/cracklattebg.png);
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-    margin-top: -60px;
+    margin-top: -100px;
+    padding-top: 5rem;
+    padding-bottom: 80px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-container > * {
+
+}
+
+.about-text {
+    height: 400px;
+    padding-inline: 5rem;
+    padding-top: 2.5rem;
+    color: #443;
+}
+
+.about-text > h2 {
+    font-size: 2.4rem;
+}
+
+.about-text > p {
+    margin-top: .5rem;
+    line-height: 1.5;
+}
+
+.about-img {
+    border-radius: 51% 49% 47% 53% / 46% 43% 57% 54%;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0);
+    height: 370px;
 }
 
 /* MENU */
 #menu {
-    background: url(img/crackwhitebg.png);
+    background: url(img/crackpwhitebg.png);
     background-size: cover;
     height: 100vh;
     width: 100vw;
