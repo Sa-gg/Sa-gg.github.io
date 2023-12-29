@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -83,16 +84,21 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8rem;
-    flex-wrap: wrap;
+    gap: 5rem;
 }
 
 .home-container > * {
-     height: 400px;
+    height: auto;
 }
 
 .home-text {
-    width: 600px;
+    min-width: 508.8px;
+    max-width: 600px;
+}
+
+.home-img {
+    max-width: 390px;  
+    min-width: 360px;
 }
 
 .home-text h1 {
@@ -107,11 +113,6 @@ section {
 .home-text > a {
     font-size: 1.2rem;
 }
-
-.home-img {
-    height: 300px;  
-}
-
 
 .viewMenu {
     background-color: #fb6503;
@@ -161,9 +162,8 @@ section {
 }
 
 .about-text {
-    height: 400px;
+    height: auto;
     padding-inline: 5rem;
-    padding-top: 2.5rem;
     color: #443;
 }
 
@@ -219,4 +219,3 @@ section {
     width: 100vw;
     margin-top: -60px;
 } */
-
