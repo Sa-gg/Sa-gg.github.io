@@ -208,11 +208,15 @@ section {
     min-height: auto;
     width: 100vw;
     margin-top: -60px;
+    padding-bottom: 150px;
 }
 
 .menu-container {
    display: flex;
    justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   flex-direction: column;
 }
 
 .menu-row {
@@ -229,14 +233,22 @@ section {
     border: 1px solid #320001;
 }
 
+.dlMenu {
+    border: none;
+    color: #fb6503;
+    margin-left: .5rem;
+}
 
-
+.dlMenu:hover {
+    background-color: #fb6503;
+    color: white;
+}
 
 /* gallery */
-/* #gallery {
+#gallery {
     background: url(img/crackblackbg.png);
     background-size: cover;
-    height: 100vh;
+    min-height: auto;
     width: 100vw;
     margin-top: -60px;
-} */
+}
