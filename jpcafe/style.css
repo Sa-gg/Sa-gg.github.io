@@ -98,6 +98,7 @@ section {
 }
 
 .home-img {
+    margin-top: 3rem;
     max-width: 390px;  
     min-width: 360px;
 }
@@ -223,6 +224,7 @@ section {
     width: 100vw;
     margin-top: -60px;
     padding-bottom: 150px;
+    padding-top: 4rem;
 }
 
 .menu-container {
@@ -270,7 +272,7 @@ section {
 
 /* gallery */
 #gallery {
-    background: url(img/crackblackbg.png);
+    background: url(img/crackwhitebg.png);
     background-size: cover;
     min-height: auto;
     width: 100vw;
