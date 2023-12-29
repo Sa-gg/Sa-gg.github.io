@@ -196,9 +196,22 @@ section {
     margin-left: .5rem;
 }
 
+.fa-location-dot {
+    color: #fb6503;
+}
+
 .viewLoc:hover {
     background-color: #fb6503;
     color: white;
+
+    .fa-location-dot {
+        color: white;
+    }
+}
+
+.fa-location-dot {
+    color: #fb6503;
+    margin-right: .3rem;
 }
 
 /* MENU */
@@ -242,7 +255,17 @@ section {
 .dlMenu:hover {
     background-color: #fb6503;
     color: white;
+    .fa-download {
+    color: white;
+    }
 }
+
+.fa-download {
+    color: #fb6503;
+    margin-right: .4rem;
+}
+
+
 
 /* gallery */
 #gallery {
