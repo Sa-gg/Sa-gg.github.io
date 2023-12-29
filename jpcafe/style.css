@@ -272,9 +272,103 @@ section {
 
 /* gallery */
 #gallery {
-    background: url(img/crackwhitebg.png);
+    background: url(img/crackorangebg.png);
     background-size: cover;
     min-height: auto;
     width: 100vw;
+    height: 372px;
     margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.pic {
+    width: 200px;
+    height: 180px;
+    border: 1px solid black;
+}
+
+/* TEAM */
+#team {
+    background-color: white;
+    min-height: auto;
+    width: 100vw;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.team {
+    height: 450px;
+    width: 350px;
+    border: 1px solid #320001;
+}
+
+/* BOOK */
+#book {
+    background: url(img/cracklattebg.png);
+    min-height: auto;
+    min-width: 100vw;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+.book {
+    height: 600px;
+    width: 500px;
+    border: 2px solid #320001;
+}
+
+.location {
+    height: 400px;
+    width: 500px;
+    border: 2px solid #320001;
+}
+
+/* FOOTER */
+footer {
+    background-color: ghostwhite;
+    min-height: auto;
+    width: 100vw;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.footer-container > * {
+    height: 250px;
+    width: 200px;
+    border: 1px solid #320001;
+}
+
+.footer-logo {
+    height: 150px;
+}
+
+.subscribe {
+    width: 350px;
+    height: 200px;
 }
