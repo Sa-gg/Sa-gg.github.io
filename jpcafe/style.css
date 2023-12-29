@@ -205,10 +205,31 @@ section {
 #menu {
     background: url(img/crackpwhitebg.png);
     background-size: cover;
-    height: 100vh;
+    min-height: auto;
     width: 100vw;
     margin-top: -60px;
 }
+
+.menu-container {
+   display: flex;
+   justify-content: center;
+}
+
+.menu-row {
+    max-width: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.menu {
+    height: 240px;
+    width: 270px;
+    border: 1px solid #320001;
+}
+
+
 
 
 /* gallery */
