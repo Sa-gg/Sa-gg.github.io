@@ -268,15 +268,22 @@ section {
     margin-right: .4rem;
 }
 
+.menu > img {
+    height: 
+    100%;
+}
+
+
+
 
 
 /* gallery */
 #gallery {
     background: url(img/crackorangebg.png);
     background-size: cover;
-    min-height: auto;
+    background-position: center;
     width: 100vw;
-    height: 372px;
+    height: 372px;   
     margin-top: -60px;
     display: flex;
     justify-content: center;
@@ -291,9 +298,17 @@ section {
 }
 
 .pic {
-    width: 200px;
-    height: 180px;
-    border: 1px solid black;
+    width: 250px;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.541);
+    border-radius: 5px;
+}
+
+.pic > img {
+    height: 100%;
 }
 
 /* TEAM */
@@ -301,6 +316,12 @@ section {
     background-color: white;
     min-height: auto;
     width: 100vw;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+#team > .heading > h1 > span {
+    left: 33%;
 }
 
 .team-container {
@@ -314,6 +335,12 @@ section {
     height: 450px;
     width: 350px;
     border: 1px solid #320001;
+    display: flex;
+    justify-content: center;
+}
+
+.team > img {
+    height: 100%;
 }
 
 /* BOOK */
@@ -340,6 +367,11 @@ section {
     height: 400px;
     width: 500px;
     border: 2px solid #320001;
+}
+
+.location > iframe {
+    height: 100%;
+    width: 100%;
 }
 
 /* FOOTER */
