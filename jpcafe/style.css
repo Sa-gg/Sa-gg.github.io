@@ -77,8 +77,8 @@ section {
     background-size: cover;
     min-height: 100vh;
     width: 100vw;
-    padding-top: 12rem;
-    padding-bottom: 150px;
+    padding-top: 9rem;
+    padding-bottom: 100px;
 }
 
 .home-container {
@@ -98,8 +98,8 @@ section {
 }
 
 .home-img {
-    margin-top: 3rem;
-    max-width: 390px;  
+    margin-top: 4.5rem;
+    max-width: 450px;  
     min-width: 360px;
 }
 
@@ -120,7 +120,11 @@ section {
     background-color: #fb6503;
     border: none;
     color: white;
+    position: relative;
+    z-index: 2;
 }
+
+
 
 /* ABOUT */
 .heading {
@@ -154,7 +158,7 @@ section {
     width: 100vw;
     margin-top: -100px;
     padding-top: 3rem;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 
 .about-container {
@@ -231,7 +235,7 @@ section {
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 2rem;
+   gap: 4rem;
    flex-direction: column;
 }
 
@@ -246,7 +250,8 @@ section {
 .menu {
     height: 240px;
     width: 270px;
-    border: 1px solid #320001;
+    overflow: hidden;
+    
 }
 
 .dlMenu {
@@ -269,9 +274,39 @@ section {
 }
 
 .menu > img {
-    height: 
-    100%;
+    height: 100%;
+    position: relative;
 }
+
+.menu1 > img {
+    height: 95%;
+    left: 7%;
+    top: 7%;
+}
+
+.menu2 > img {
+    height: 70%;
+    top: 15%;
+    left: 10%;
+}
+
+.menu3 > img {
+    height: 115%;
+    bottom: 8%;
+}
+
+.menu5 > img {
+    height: 85%;
+    left: 13%;
+    top: 5%;
+}
+
+.menu6 > img {
+    height: 83%;
+    left: 14%;
+    top: 8%;
+}
+
 
 
 
@@ -310,6 +345,7 @@ section {
 .pic > img {
     height: 100%;
 }
+
 
 /* TEAM */
 #team {
