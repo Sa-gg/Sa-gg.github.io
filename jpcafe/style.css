@@ -556,7 +556,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* FOOTER */
 footer {
-    background-color: ghostwhite;
+    background-color: rgba(248, 248, 255, 0.527);
     min-height: auto;
     width: 100%;
     padding-top: 2rem;
