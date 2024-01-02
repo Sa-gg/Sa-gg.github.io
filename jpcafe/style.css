@@ -264,12 +264,14 @@ section {
 
 .heading > h1 {
     font-size: 5rem;
-    -webkit-text-stroke: 0.01rem #32000125;
+    -webkit-text-stroke: 0.01rem #32000134;
     color: transparent;
     margin-bottom: .5rem;
     position: relative;
     margin-inline: auto;
     display: inline-block;
+    outline: none;
+    border: none;
 }
 
 .heading > h1 > span {
@@ -403,7 +405,6 @@ section {
 
     .heading > h1 {
         font-size: 3.5rem;
-        -webkit-text-stroke: 0.01rem #320001b7;
     }
     
     .heading > h1 > span {
