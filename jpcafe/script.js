@@ -58,5 +58,23 @@ const initSlider = () => {
     })
 }
 
-
 window.addEventListener("load", initSlider)
+
+// HAMBURGER NAV ANIMATION
+window.onload = function () {
+    const menu_btn = document.querySelector('.hamburger');
+    const nav_bar = document.querySelector('.mobile-nav')
+    const anchors = document.querySelectorAll('.nav')
+
+    anchors.forEach((anchors) => {
+        anchors.addEventListener("click", function () {
+            menu_btn.classList.toggle('is-active')
+            nav_bar.classList.toggle("is-active")
+        })
+    })
+    
+    menu_btn.addEventListener("click", function () {
+        menu_btn.classList.toggle('is-active')
+        nav_bar.classList.toggle("is-active")
+    })
+}
