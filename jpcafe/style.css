@@ -391,6 +391,7 @@ section {
 
     .about-text p {
         text-align: justify;
+        padding-inline: .5rem;
     }
 }
 
