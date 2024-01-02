@@ -402,6 +402,7 @@ section {
 
     .heading > h1 {
         font-size: 3.5rem;
+        -webkit-text-stroke: 0.01rem #320001b7;
     }
     
     .heading > h1 > span {
