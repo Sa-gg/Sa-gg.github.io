@@ -405,7 +405,6 @@ section {
 
     .heading > h1 {
         font-size: 3.5rem;
-        -webkit-text-stroke: 0.01rem #32000154;
     }
     
     .heading > h1 > span {
@@ -421,6 +420,7 @@ section {
 #menu {
     background: url(img/bg/crackpwhitebg.png);
     background-size: cover;
+    background-position: center;
     min-height: auto;
     width: 100%;
     margin-top: -60px;
@@ -684,6 +684,7 @@ scrollbar-thumb::after {
 
 .team-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
@@ -696,7 +697,8 @@ scrollbar-thumb::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+    margin-inline: 1rem;
+    margin-bottom: 4rem;
 }
 
 .team > img {
