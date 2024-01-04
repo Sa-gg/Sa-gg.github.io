@@ -17,7 +17,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+.header {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ header {
     width: 100%;
     font-size: 1rem;
     z-index: 999;
-    
+    transition: top 0.3s ease-in-out;
 }
 
 .logo > img {
@@ -676,6 +676,7 @@ scrollbar-thumb::after {
     width: 100%;
     padding-top: 3.5rem;
     padding-bottom: 4rem;
+    padding-inline: 1rem;
 }
 
 #team > .heading > h1 > span {
@@ -688,6 +689,7 @@ scrollbar-thumb::after {
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    gap: 1rem;
 }
 
 .team {
@@ -697,7 +699,6 @@ scrollbar-thumb::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-inline: 1rem;
     margin-bottom: 4rem;
 }
 
@@ -708,17 +709,19 @@ scrollbar-thumb::after {
 
 /* BOOK */
 #book {
-    background: url(img/bg/cracklattebg.png);
+    background: url(img/bg/cracklattelongbg.png);
     min-height: auto;
     min-width: 100%;
+    padding-inline: 1rem;
 }
 
 .book-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap-reverse;
     gap: 5rem;
     margin-top: 2rem;
-    
+
 }
 
 .book {
@@ -726,6 +729,7 @@ scrollbar-thumb::after {
     width: 500px;
     border: 2px solid #320001;
     border-radius: 10px;
+    background-color:  #f6e9d4;
 }
 
 .location {
@@ -781,6 +785,7 @@ scrollbar-thumb::after {
 #book-form {
     display: flex;
     flex-direction: column;
+    
     padding: .5rem 1rem; 
 
 }

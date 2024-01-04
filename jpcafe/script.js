@@ -1,3 +1,42 @@
+// HAMBURGER NAV ANIMATION
+window.onload = function () {
+    const menu_btn = document.querySelector('.hamburger');
+    const nav_bar = document.querySelector('.mobile-nav')
+    const anchors = document.querySelectorAll('.nav')
+    const header = document.querySelector('.header')
+
+    var lastScrollTop = 0;
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY;
+        
+        if (scrollPosition > lastScrollTop) {
+            // Scrolling down
+            header.style.top = '-90px'; 
+        } else {
+            // Scrolling up
+            header.style.top = '0';
+        }
+    
+        lastScrollTop = scrollPosition;
+    })
+    
+
+    anchors.forEach((anchors) => {
+        anchors.addEventListener("click", function () {
+            menu_btn.classList.toggle('is-active')
+            nav_bar.classList.toggle("is-active")
+        })
+    })
+    
+    menu_btn.addEventListener("click", function () {
+        menu_btn.classList.toggle('is-active')
+        nav_bar.classList.toggle("is-active")
+    })
+}
+
+
+
+
 // GALLERY SCROLLBAR
 const initSlider = () => {
     const imageList = document.querySelector(".gallery-list")
@@ -60,21 +99,3 @@ const initSlider = () => {
 
 window.addEventListener("load", initSlider)
 
-// HAMBURGER NAV ANIMATION
-window.onload = function () {
-    const menu_btn = document.querySelector('.hamburger');
-    const nav_bar = document.querySelector('.mobile-nav')
-    const anchors = document.querySelectorAll('.nav')
-
-    anchors.forEach((anchors) => {
-        anchors.addEventListener("click", function () {
-            menu_btn.classList.toggle('is-active')
-            nav_bar.classList.toggle("is-active")
-        })
-    })
-    
-    menu_btn.addEventListener("click", function () {
-        menu_btn.classList.toggle('is-active')
-        nav_bar.classList.toggle("is-active")
-    })
-}
