@@ -28,7 +28,7 @@ body {
     width: 100%;
     font-size: 1rem;
     z-index: 999;
-    transition: top 0.3s ease-in-out;
+    transition: top 0.2s;
 }
 
 .logo > img {
