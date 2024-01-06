@@ -741,7 +741,6 @@ scrollbar-thumb::after {
 .location > div {
     display: flex;
     gap: 3rem;
-    /* border: 1px solid black; */
 }
 
 
@@ -785,7 +784,6 @@ scrollbar-thumb::after {
 #book-form {
     display: flex;
     flex-direction: column;
-    
     padding: .5rem 1rem; 
 
 }
@@ -833,6 +831,44 @@ input[type=number]::-webkit-outer-spin-button {
 .sendMessage:hover {
     border-color: #fb6503;
     color: #fb6503;
+}
+
+
+@media screen and (max-width: 540px) {
+    .location {
+        width: 100%;
+    }
+
+    .location > iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .location {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .location > div:nth-child(2)  {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .location > div:nth-child(2) > div:first-child {
+        text-align: center;
+    }
+
+    .loc-contact-con {  
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loc-follow-con .follow-us {
+        margin-top: 1.2rem;
+    }
 }
 
 /* FOOTER */
