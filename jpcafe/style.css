@@ -264,7 +264,7 @@ section {
 
 .heading > h1 {
     font-size: 5rem;
-    -webkit-text-stroke: 0.01rem #32000125;
+    -webkit-text-stroke: 0.01rem #32000118;
     color: transparent;
     margin-bottom: .5rem;
     position: relative;
@@ -412,9 +412,6 @@ section {
     }
 
 }
-
-
-
 
 /* MENU */
 #menu {
@@ -761,6 +758,11 @@ scrollbar-thumb::after {
     font-size: 1.6rem;
     margin-right: .5rem;
     margin-top: .3rem;
+    transition: 0.2s;
+}
+
+.loc-follow-con > div > i:hover {
+    transform: scale(1.4);
 }
 
 
@@ -801,10 +803,6 @@ scrollbar-thumb::after {
 }
 
 #book-form > input:focus, #book-form > textarea:focus {
-    border-color: #fb6503;
-}
-
-#book-form > input:active {
     border-color: #fb6503;
 }
 
@@ -877,13 +875,13 @@ footer {
     min-height: auto;
     width: 100%;
     padding-top: 2rem;
-    padding-bottom: 1rem;
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 5rem;
 }
 
@@ -893,12 +891,11 @@ footer {
 }
 
 .footer-container h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
 /* logo */
-
 .footer-logo {
     height: 100px;
     width: 100px;
@@ -913,12 +910,10 @@ footer {
     position: relative;
 }
 
+
+
+
 /* opening hours */
-
-.opening {
-    width: 300px;
-}
-
 .opening-container {
     display: flex;
     gap: 1rem;
@@ -930,71 +925,30 @@ footer {
 
 .date > p, .hours > p {
     text-wrap: nowrap;
+    font-size: .9rem;
 }
 
-.hours > * {
-    color: #fb6503;
-}
 
 /* quick links */
-
 .quick-links {
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
+    padding-left: 0rem;
 }
 
 .quick-links > a {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
 
 .quick-links > a:hover {
     color:  #fb6503;
 }
 
-/* contact */
-.contact > p {
-    margin-bottom: .5rem;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.contact .follow-us {
-    margin-top: 1rem;
-}
-
-.contact > p:hover {
-    color: #fb6503;
-    i {
-        color: #fb6503;
-    }
-}
-
-
-.contact > div {
-    margin-top: .5rem;
-}
-
-.contact > div > i {
-    font-size: 2rem;
-    margin-right: .5rem;
-    transition: transform 0.2s ease-in-out;
-
-}
-
-.contact > div > i:hover {
-     transform: scale(1.2);
-     color: #fb6503;
-}
- 
-
 
 /* subscribe */
 .subscribe {
-    width: 350px;
-    height: 200px;
+    width: 307px;
 }   
 
 .subscribe > p {
@@ -1005,12 +959,12 @@ footer {
     display: flex;
     justify-content: flex-start;    
     margin-top: .8rem;
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
 
 #subscribe-form > input {
-    padding: 1rem;
-    font-size: 1rem;
+    padding: .5rem;
+    font-size: .9rem;
     border-right: none;
     outline: none;
     border-radius: 5px 0 0 5px;
@@ -1034,6 +988,28 @@ footer {
     color: white;
     border-color: #fb6503;
 }
+
+
+.contact {
+    display: none;
+}
+
+.copyright {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1422px) {
+    .footer-logo {
+        display: none;
+    }
+}
+
+
+
+
 
 /* RESPONSIVES */
 
