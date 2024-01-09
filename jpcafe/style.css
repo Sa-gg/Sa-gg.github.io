@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-inline: 9%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     height: 90px;
     width: 100%;
     font-size: 1rem;
@@ -745,6 +745,18 @@ scrollbar-thumb::after {
     font-size: 2rem;
 }
 
+.loc-loc-con > div:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.loc-loc-con .fa-location-dot {
+    padding-top: .2rem;
+    display: none;
+}
+
+
 .loc-contact-con {
     padding-top: 2.9rem;
 }
@@ -965,9 +977,11 @@ footer {
 #subscribe-form > input {
     padding: .5rem;
     font-size: .9rem;
+    border: 2px solid #320001;
     border-right: none;
     outline: none;
     border-radius: 5px 0 0 5px;
+
 }
 
 #subscribe-form > input:focus {
@@ -1012,8 +1026,6 @@ footer {
 
 
 /* RESPONSIVES */
-
-
 @media (max-width: 1023px) {
     .slide-button {
         display: none!important;
