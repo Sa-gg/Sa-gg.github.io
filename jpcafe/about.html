@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1ef88bc824.js" crossorigin="anonymous"></script>
     <title>About Us</title>
 
     <style>
@@ -21,8 +22,33 @@
 
     header {
         width: 100vw;
+        height: 150px;
         padding: 1.5rem;
+        background-position: center;
         background-color: ghostwhite;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header div:last-child {
+        width: 120px;
+        height: auto;
+    }
+
+
+    .logo > img {
+        height: 70px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .back a {
+        text-decoration: none;
+        gap: .3rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -32,7 +58,9 @@
 <body>
 
     <header>
-        <div class="back"><a href="/index.html#about">< BACK</a></div>
+        <div class="back"><a href="/index.html#about"><span class="material-symbols-outlined">arrow_back_ios_new</span>BACK</a></div>
+        <div class="logo"><img src="/img/logo1.png" alt=""></div>
+        <div></div>
     </header>
 
     <main>
