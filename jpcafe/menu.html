@@ -21,12 +21,12 @@
     }
 
     header {
-        width: 100vw;
+        width: 100%;
         height: 150px;
-        background-position: center;
         background-color: ghostwhite;
         display: flex;
         justify-content: space-between;
+        padding: 1.5rem;
     }
 
     header div:last-child {
@@ -73,31 +73,32 @@
         margin-left: .5rem;
     }
 
+
     section {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
-    .coffee, .frappe {
-        max-width: 700px;
-        margin: auto;
-        margin-top: 5rem;
-    }
 
     section h2 {
         text-align: center;
         margin-bottom: 1rem;
     }
 
-    .coffee-row {
+    .coffee, .frappe {
+        max-width: 900px;
+        margin-inline: auto;
+        margin-top: 5rem;
+    }
+
+    .coffee-row, .frappe-row {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: center;
-        gap: 1rem;
-    }
+        justify-content: center ;
 
+    }
     
-    .coffee-col {
+    .coffee-col, .frappe-col {
         display: flex;
         width: 100px;
         flex-direction: column;
@@ -105,15 +106,17 @@
         justify-content: center;
         text-align: center;
         overflow: hidden;
+        margin-inline: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
-    .coffee-col > div  {
+    .coffee-col > div, .frappe-col > div  {
         height: 100px;
         overflow: hidden;
  
     }
 
-    .coffee-col img {
+    .coffee-col img, .frappe-col img {
         position: relative;
         height: 100%;
     }
@@ -165,36 +168,6 @@
     }
     
 
-    
-    .frappe-row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    
-    .frappe-col {
-        display: flex;
-        width: 100px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .frappe-col > div {
-        height: 100px;
-        overflow: hidden;
-    }
-
-    .frappe-col img {
-        position: relative;
-        height: 90%;
-    }
-
     .frappe1 > img {
         height: 95%;
         top: 3%;
@@ -211,14 +184,36 @@
         top: 8%;
     }   
 
-    .smoothies, .teas, .milkshakes {
-        margin-inline: auto;
-        max-width: 500px;
-        border: 1px solid black;
-    }
     
 
+    .smoothies, .milkshakes, .teas, .juices {
+        margin-inline: auto;
+        max-width: 450px;
+    }
 
+    .smoothie, .milkshake {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    .tea, .juice {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+    }
+
+    .try-con {
+        display: flex;
+        justify-content: center; 
+        gap: 7rem;
+    }
+
+    .try {
+        display: flex;
+        flex-direction: column;
+        
+    }
 
     </style>
 
@@ -241,6 +236,7 @@
             <h2>COFFEE</h2>
 
             <div class="coffee-row">
+
                 <div class="coffee-col">
                     <div class="coffee1"><img src="./img/menu/coffee/coffee1.png" alt=""></div>
                     <p class="label">Aremicano</p>
@@ -325,52 +321,80 @@
 
                 <div class="frappe-col">
                     <div class="frappe4"><img src="./img/menu/frappe/frappe4.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Toasty Pumpkin Cocoa</p>
                 </div>
 
                 <div class="frappe-col">
                     <div class="frappe5"><img src="./img/menu/frappe/frappe5.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Spiced Pumpkin Iced Latte</p>
                 </div>
 
                 <div class="frappe-col">
                     <div class="frappe6"><img src="./img/menu/frappe/frappe6.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Mint Cookie Crumble Frappe</p>
                 </div>
 
                 <div class="frappe-col">
                     <div class="frappe7"><img src="./img/menu/frappe/frappe7.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Cocomint Mocha</p>
                 </div>
 
                 <div class="frappe-col">
                     <div class="frappe8"><img src="./img/menu/frappe/frappe8.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Blackberry Crumble Latte</p>
                 </div>
 
                 <div class="frappe-col">
                     <div class="frappe9"><img src="./img/menu/frappe/frappe9.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Nuts n' Berries Steamer</p>
                 </div>
 
                 <div class="frappe-col">
                     <div class="frappe10"><img src="./img/menu/frappe/frappe10.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Iced & Spiced Irish Latte</p>
                 </div>
 
                 <div class="frappe-col">
                     <div class="frappe11"><img src="./img/menu/frappe/frappe11.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Mighty Magnificent Mocha</p>
                 </div>
 
                 <div class="frappe-col">
                     <div class="frappe12"><img src="./img/menu/frappe/frappe12.png" alt=""></div>
-                    <p class="label">White Chocolate Raspberry Truffle</p>
+                    <p class="label">Bejeweled Butterscotch Coffee</p>
+                </div>
+
+                 <div class="frappe-col">
+                    <div class="frappe13"><img src="./img/menu/frappe/frappe13.png" alt=""></div>
+                    <p class="label">Mocha Borgia</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe14"><img src="./img/menu/frappe/frappe14.png" alt=""></div>
+                    <p class="label">Black & White Mocha</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe15"><img src="./img/menu/frappe/frappe15.png" alt=""></div>
+                    <p class="label">Raspberry Mocha - Lite</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe16"><img src="./img/menu/frappe/frappe16.png" alt=""></div>
+                    <p class="label">Honey Maple Latte</p>
+                </div>
+
+                <div class="frappe-col">
+                    <div class="frappe17"><img src="./img/menu/frappe/frappe17.png" alt=""></div>
+                    <p class="label">Strawberry Dipped Mocha</p>
                 </div>
             </div>
         </section>
 
-        <section class="smoothies">
+        <div class="try-con">
+
+        <div class="try">
+            <section class="smoothies">
             <h2>SMOOTHIES</h2>
             <div class="smoothie">
                 <div>
@@ -404,10 +428,59 @@
                 <p>175</p>
             </div>
         </section>
-        
 
+        
+        </section>
+
+        <section class="milkshakes">
+            <h2>DECADENT MILKSHAKES</h2>
+            
+            <div class="milkshake">
+                <div>
+                    <h4>Nutella & Oreo</h4>
+                    <i>Nutella, Oreo Cookies, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>
+
+            <div class="milkshake">
+                <div>
+                    <h4>Banana & Peanut Butter</h4>
+                    <i>Banana, Peanut Butter, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>  
+
+            <div class="milkshake">
+                <div>
+                    <h4>Biscoff Cookie Cream</h4>
+                    <i>Biscoff Cookie Cream, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>
+
+            <div class="milkshake">
+                <div>
+                    <h4>Matcha & Mint</h4>
+                    <i>Matcha, Mint, Vanilla Ice Cream & Milk topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>
+
+            <div class="milkshake">
+                <div>
+                    <h4>Strawberry Cheesecake</h4>
+                    <i>Strawberries, Cream Cheese, Cookie, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
+                </div>
+                <p>225</p>
+            </div>
+        </section>
+
+        </div>
+        
+        <div class="try">
         <section class="teas">
-            <h2>TEAS</h2>
+            <h2>TEA</h2>
             
             <div class="tea">
                 <h4>Assam Black Tea</h4>
@@ -457,51 +530,82 @@
 
 
 
-        </section>
-
-        <section class="milkshakes">
-            <h2>DECADENT MILKSHAKES</h2>
+        <section class="juices">
+            <h2>FRUIT JUICES & SHAKES</h2>
             
-            <div class="milkshake">
-                <div>
-                    <h4>Nutella & Oreo</h4>
-                    <i>Nutella, Oreo Cookies, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
-                </div>
-                <p>225</p>
+            <div class="juice">
+                <h4>Banana</h4>
+                <p> 120</p>
             </div>
 
-            <div class="milkshake">
-                <div>
-                    <h4>Banana & Peanut Butter</h4>
-                    <i>Banana, Peanut Butter, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
-                </div>
-                <p>225</p>
-            </div>  
-
-            <div class="milkshake">
-                <div>
-                    <h4>Biscoff Cookie Cream</h4>
-                    <i>Biscoff Cookie Cream, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
-                </div>
-                <p>225</p>
+            <div class="juice">
+                <h4>Banana Pineapple</h4>
+                <p> 125</p>
             </div>
 
-            <div class="milkshake">
-                <div>
-                    <h4>Matcha & Mint</h4>
-                    <i>Matcha, Mint, Vanilla Ice Cream & Milk topped with Whipped Cream</i>
-                </div>
-                <p>225</p>
+            <div class="juice">
+                <h4>Banana Strawberry</h4>
+                <p> 175</p>
             </div>
 
-            <div class="milkshake">
-                <div>
-                    <h4>Strawberry Cheesecake</h4>
-                    <i>Strawberries, Cream Cheese, Cookie, Vanilla Ice Cream & Milk, topped with Whipped Cream</i>
-                </div>
-                <p>225</p>
+            <div class="juice">
+                <h4>Mango</h4>
+                <p> 130</p>
             </div>
+
+            <div class="juice">
+                <h4>Mango Banana</h4>
+                <p> 135</p>
+            </div>
+
+            <div class="juice">
+                <h4>Mango Pineapple</h4>
+                <p> 135</p>
+            </div>
+
+            <div class="juice">
+                <h4>Mango Strawberry</h4>
+                <p> 185</p>
+            </div>
+
+             <div class="juice">
+                <h4>Mango Watermelon</h4>
+                <p> 135</p>
+            </div>
+            
+             <div class="juice">
+                <h4>Pineapple</h4>
+                <p>120</p>
+            </div>
+
+            <div class="juice">
+                <h4>Pineapple Mango Banana</h4>
+                <p>140</p>
+            </div>
+
+            <div class="juice">
+                <h4>Pineapple Strawberry</h4>
+                <p>175</p>
+            </div>
+            
+            <div class="juice">
+                <h4>Pineapple Watermelon</h4>
+                <p>125</p>
+            </div>
+
+            <div class="juice">
+                <h4>Watermelon</h4>
+                <p>120</p>
+            </div>
+
+
+
         </section>
+        </div>
+
+        </div>
+
+        
 
         
 
