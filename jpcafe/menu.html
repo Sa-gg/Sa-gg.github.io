@@ -87,6 +87,13 @@
         margin-left: .5rem;
     }
 
+    @media screen and (max-width: 420px) {
+        .download-menu {
+            margin-top: 1rem;
+            gap: .5rem;
+            flex-direction: column;
+        }
+    }
 
     section {
         margin-top: 2rem;
@@ -180,22 +187,60 @@
         height: 120%;
         bottom: 15%;
     }
-    
 
     .frappe1 > img {
         height: 95%;
-        top: 3%;
-
+        bottom: -16%;
+        left: -7%;
     }
 
     .frappe2 > img {
-        height: 80%;
-        top: 8%;
+        height: 85%;
+        top: 14%;
     }
 
     .frappe3 > img {
-        height: 80%;
+        height: 85%;
+        top: 10%;
+    }   
+
+    .frappe4 > img {
+        height: 85%;
+        top: 9%;
+    }   
+
+    .frappe5 > img {
+        height: 90%;
+        top: 6%;
+    }   
+
+    .frappe6 > img {
+        height: 100%;
+    }   
+
+    .frappe7 > img {
+        height: 95%;
+        top: 6%;
+    }   
+
+    .frappe8 > img {
+        height: 90%;
+        top: 5%;
+    }   
+
+    .frappe9 > img {
+        height: 90%;
+        top: 10%;
+    }   
+
+    .frappe10 > img {
+        height: 90%;
         top: 8%;
+    }   
+
+    .frappe13 > img {
+        height: 95%;
+        top: 5%;
     }   
 
     
@@ -217,16 +262,117 @@
         margin-bottom: .5rem;
     }
 
-    .try-con {
+    .drinks-con {
         display: flex;
         justify-content: center; 
         gap: 7rem;
+        padding: 2rem;
     }
 
-    .try {
+
+    .drinks {
+        display: flex;
+        flex-direction: column;      
+    }
+
+    .food-con {
+        margin-top: 8rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .food-row1{
+        display: flex;
+        justify-content: center;
+        gap: 7rem;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        .drinks-con {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .food-row1 {
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+
+        .teas, .juices {
+            margin-top: 3rem;
+        }
+    }
+
+    .breakfasts, .sandwiches {
+        max-width: 480px;
+    }
+
+    .breakfast, .sandwich {
+        display: flex;
+        gap: 3rem;
+        margin-bottom: .5rem;
+    }
+
+
+    .waffles {
+        max-width: 1100px;
+        margin-inline: auto;
+        border-radius: 10px;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    .waffles-images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .waffle {
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+    }
+
+    .salads {
+        max-width: 1100px;
+        margin-inline: auto;
+    }
+
+    .salad {
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+    }
+
+    @media screen and (max-width: 589px) {
+        .waffles, .salads {
+            margin-inline: .9rem;
+        }
+
+        .waffles-images {
+            justify-content: space-around;
+        }
+
+        .waffles-images img {
+            width: 150px;
+        }
         
+        
+    }
+
+    @media screen and (max-width: 400px) {
+        .waffles-images img {
+            width: 100px;
+        }
+
     }
     
 
@@ -389,10 +535,10 @@
 
     <main>
         <div class="download-menu">
-            <a href="">OUR FOOD MENU <i class="fa-solid fa-download"></i></a>
-            <a href="">OUR DRINKS MENU <i class="fa-solid fa-download"></i></a>
+            <a href="img/JPCafe-FoodMenu.pdf" download="JPCafe-FoodMenu.pdf">OUR FOOD MENU <i class="fa-solid fa-download"></i></a>
+            <a href="img/JPCafe-DrinksMenu.pdf" download="JPCafe-DrinksMenu.pdf">OUR DRINKS MENU <i class="fa-solid fa-download"></i></a>
         </div>
-
+        <h1 style="text-align: center; font-size: 3rem; margin-top: 3rem;">DRINKS</h1>
         <section class="coffee">
             <h2>COFFEE</h2>
 
@@ -552,9 +698,9 @@
             </div>
         </section>
 
-        <div class="try-con">
+        <div class="drinks-con">
 
-        <div class="try">
+        <div class="drinks">
             <section class="smoothies">
             <h2>SMOOTHIES</h2>
             <div class="smoothie">
@@ -639,7 +785,7 @@
 
         </div>
         
-        <div class="try">
+        <div class="drinks">
         <section class="teas">
             <h2>TEA</h2>
             
@@ -762,9 +908,231 @@
 
 
         </section>
+            
         </div>
 
         </div>
+
+
+    <div class="food-con">
+        <h1 style="text-align: center; font-size: 3rem;">FOODS</h1>
+        <div class="food-row1">
+
+            <section class="breakfasts">
+            <h2>BREAKFAST</h2>
+                <div class="breakfast">
+                    <div>
+                        <h4>Choco-Banana Crepe</h4>
+                        <i>A thin and delicate crepe filled with sliced bananas, ice cream and nutella</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Mango Cream Crepe</h4>
+                        <i>Crepe filled with caramelized mango and cream cheese frosting, served with vanilla ice cream and walnuts</i>
+                    </div>
+                    <p>265</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Ham, Egg & Cheese Crepe</h4>
+                        <i>Crepe stuffed with ham, emmental cheese, sunny side up egg and Hollandaise sauce</i>
+                    </div>
+                    <p>265</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>French Toasts</h4>
+                        <i>Thick slices of bread soaked in custard and grilled, served with mango compote and walnut crumble</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Full Breakfast</h4>
+                        <i>Scrambled eggs, homemade bacon, sausage, toasted bread and breakfast potatoes</i>
+                    </div>
+                    <p>285</p>
+                </div>
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Breakfast Tostadas</h4>
+                        <i>
+                        Two crispy tortillas topped with refried beans scrambled eggs, Pico de gallo, onion, tomato, lettuce and cheese. Add homemade bacon bits for Php50</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+
+                <div class="breakfast">
+                    <div>
+                        <h4>Silog</h4>
+                        <i>Choice of homemade bacon, sausage, chicken, or pork served with sunny side up egg and rice</i>
+                    </div>
+                    <p>225</p>
+                </div>
+
+            </section>
+
+
+            <section class="sandwiches">
+                
+                <h2>SANDWICHES</h2>
+                <div class="sandwich">
+                    <div>
+                        <h4>Egg & Cheese Wrap</h4>
+                        <i>Eggs & emmental cheese wrapped in a flatbread with tomato, lettuce and mayo. Add bacon for Php50</i>
+                    </div>
+                    <p>215</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Falafel Wrap</h4>
+                        <i>Falafel balls with tahini sauce, lettuce, tomato and onion wrapped in a flatbread</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Clubhouse Sandwich</h4>
+                        <i>A sandwhich of toasted bread, bacon, ham, egg. lettuce, tomato, and mayo. Add cheese for php50</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Ham Grilled Cheese</h4>
+                        <i>Buttered and toasted bread filled with sliced ham, emmental, and mozzarella cheese</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Crank Turkey, Brie & Cranberry Sauce</h4>
+                        <i>Roasted turkey slices, brie cheese & cranberry sauce served in a toasted baguette bread. Add homemade bacon for Php50</i>
+                    </div>
+                    <p>295</p>
+                </div>
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Breakfast Tostadas</h4>
+                        <i>
+                        Two crispy tortillas topped with refried beans scrambled eggs, Pico de gallo, onion, tomato, lettuce and cheese. Add homemade bacon bits for Php50</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+
+                <div class="sandwich">
+                    <div>
+                        <h4>Ultimate Tuna Melt</h4>
+                        <i>Slices of toasted bread, tuna, and mayo with melty emmental and mozzarella cheese</i>
+                    </div>
+                    <p>215</p>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="food-row2">
+            <fieldset class="waffles">
+              <legend style="text-align: center;"><h2>SWEET AND SAVORY WAFFLES</h2></legend>
+                <div class="waffles-images"><img src="img/waffle1.png" alt=""><img src="img/waffle2.png" alt=""></div>
+
+
+                <div class="waffle">
+                    <div>
+                        <h4>Waffle & Berries</h4>
+                        <i>Fluffy waffle topped with berries and homemade syrup. Add a scoop of vanilla ice cream for Php50</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="waffle">
+                    <div>
+                        <h4>Bananas Foster Mochi Waffle (Gluten Free)</h4>
+                        <i>Soft and chewy mochi waffle with caramelized bananas, buttery rum sauce, and whipped cream</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+                <div class="waffle">
+                    <div>
+                        <h4>Cinnamon Roll Waffle</h4>
+                        <i>Crispy waffles infused with cinnamon and topped with cream cheese frosting</i>
+                    </div>
+                    <p>245</p>
+                </div>
+
+
+                <div class="waffle">
+                    <div>
+                        <h4>Fried Chicken & Waffle</h4>
+                        <i>Crispy fried chicken served on a fluffy waffle with maple butter cream</i>
+                    </div>
+                    <p>295</p>
+                </div>
+
+                 <div class="waffle">
+                    <div>
+                        <h4>Smooth Cafe's Eggs Benedict Waffle</h4>
+                        <i>Perfectly poached eggs on a fluffy waffle with arugula, homemade bacon, and Hollandaise sauce</i>
+                    </div>
+                    <p>295</p>
+                </div>  
+            </fieldset>
+        </div>
+
+        <div class="food-row3">
+            <section class="salads">
+                <h2>SALADS</h2>
+
+                <div class="salad">
+                    <div>
+                        <h4>Garden Salad</h4>
+                        <i>Mixed lettuce, carrots, cucumbers, tomatoes, beetroots, red onions, arugula, orange carpels, raisins, olives, walnuts & balsamic dressing</i>
+                    </div>
+                    <p>245</p>
+                </div>  
+
+                <div class="salad">
+                    <div>
+                        <h4>Ceasar Salad</h4>
+                        <i>Romaine lettuce and croutons tossed in a creamy dressing made with eggs, olive oil, lemon, parmesan, worcestershire sauce, anchovies, and bacon bits</i>
+                    </div>
+                    <p>245</p>
+                </div>  
+
+
+                <div class="salad">
+                    <div>
+                        <h4>Mango Salad</h4>
+                        <i>Mixed lettuce, black olives, tomatoes, cucumbers, slices of mango & balsamic vinaigrette</i>
+                    </div>
+                    <p>245</p>
+                </div>  
+
+                <div class="salad">
+                    <div>
+                        <h4>Tri-Color Quinoa Salad</h4>
+                        <i>Bowl of tri-color quinoa served with tomatoes, cucumbers, red onions, mango, raisins, almonds & salad dressing</i>
+                    </div>
+                    <p>245</p>
+                </div>  
+            </section>
+        </div>
+    </div>
 
         
 
