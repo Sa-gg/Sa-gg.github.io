@@ -9,6 +9,8 @@
 
     <style>
 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
     * {
         margin: 0;
         padding: 0;
@@ -21,7 +23,7 @@
     }
 
     header {
-        width: 100vw;
+        width: 100%;
         height: 150px;
         padding: 1.5rem;
         background-position: center;
@@ -51,66 +53,306 @@
         align-items: center;
     }
 
+     @media screen and (max-width: 600px) {
+        header {
+            align-items: center;
+        }
+
+        header div:last-child {
+            display: none;
+        }
+     }
+
+
+    /*  */
+
     main {
-        padding-top: 5rem;
-        max-width: 800px;
+        padding-top: 2rem;
+        max-width: 850px;
         margin: auto;
+        padding-inline: 1rem;
     }
 
     main h1 {
         text-align: center;
+        font-size: 3.5rem;
     }
 
-    main h2 {
+    main p {
+        margin-top: 2rem;
+        line-height: 1.2;
+        font-size: 1.2rem;
+    }
+
+    .qoute {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qoute > i {
+        background-color: ghostwhite;
+        position: relative;
+        padding: .5rem .9rem;
         text-align: center;
-        margin-top: 1rem;
+
     }
 
-    
+    .qoute > i::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: #fb6503;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+    }
+
+    main p:nth-child(3) {
+        text-indent: 1.2rem;
+    }
+
+    main p:last-child {
+        text-indent: 1.2rem;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: rgba(248, 248, 255, 0.527);
+        min-height: auto;
+        width: 100%;
+        padding-top: 2rem;
+        margin-top: 5rem;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .footer-container > * {
+        height: auto;
+        width: auto;
+    }
+
+    .footer-container h4 {
+        font-size: 1rem;
+    }
+
+
+    /* logo */
+    .footer-logo {
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo > img {
+        height: 100px;
+        position: relative;
+    }
+
+
+
+
+    /* opening hours */
+    .opening-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .date > *, .hours > * {
+        margin-top: .2rem;
+    }
+
+    .date > p, .hours > p {
+        text-wrap: nowrap;
+        font-size: .9rem;
+    }
+
+
+    /* quick links */
+    .quick-links {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+    }
+
+    .quick-links > a {
+        text-decoration: none;
+        font-size: .9rem;
+    }
+
+    .quick-links > a:hover {
+        color:  #fb6503;
+    }
+
+
+    /* subscribe */
+    .subscribe {
+        width: 307px;
+    }   
+
+    .subscribe > p {
+        font-size: .9rem;
+    }
+
+    #subscribe-form {
+        display: flex;
+        justify-content: flex-start;    
+        margin-top: .8rem;
+        font-size: .9rem;
+    }
+
+    #subscribe-form > input {
+        padding: .5rem;
+        font-size: .9rem;
+        border: 2px solid #320001;
+        border-right: none;
+        outline: none;
+        border-radius: 5px 0 0 5px;
+
+    }
+
+    #subscribe-form > input:focus {
+        border: 2px solid #fb6503;
+        border-right: none;
+    }
+
+    #subscribe-form > a {
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        border: .2rem solid #320001;
+        color: #443;
+        
+    }
+
+    #subscribe-form > a:hover {
+        background-color: #fb6503;
+        color: white;
+        border-color: #fb6503;
+    }
+
+
+    .contact {
+        display: none;
+    }
+
+    .copyright {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+
+
+    @media screen and (max-width: 1422px) {
+        .footer-logo {
+            display: none;
+        }
+    }
+
+     @media screen and (max-width: 1422px) {
+        
+     }
+
     </style>
 
 </head>
 <body>
 
     <header>
-        <div class="back"><a href="./#about"><span class="material-symbols-outlined">arrow_back_ios_new</span>BACK</a></div>
+        <div class="back"><a href="./#about"><span class="material-symbols-outlined">arrow_back_ios_new</span>HOME</a></div>
         <div class="logo"><img src="/img/logo1.png" alt=""></div>
         <div></div>
     </header>
 
     <main>
-        <h1>About Us</h1>
-        <p>    Welcome to JP Cafe, a haven for those who savor the art of exceptional coffee and crave a culinary adventure. Situated at 500 Lenox Rd NE #150 in the heart of Atlanta, GA 30326, JP Cafe is more than a coffeehouse; it's a space where every sip and bite tell a story of dedication and passion.</p>
+        <h1>ABOUT US</h1>
 
-        <h2>Our Mission</h2>
-        <p>    At JP Cafe, our mission is simple yet profound: to elevate every moment through exceptional culinary experiences. We believe in creating a warm, welcoming environment where individuals can connect, relax, and savor the finest flavors crafted with care and dedication.
+        <p class="qoute"><i>Welcome to JPCafe: Where Every Sip Tells a Story.</i></p>
+
+        <p>JP Cafe isn't just a coffee shop; it's a haven for those seeking a delightful escape from the ordinary. It's a place where the aroma of freshly brewed coffee intertwines with the warmth of genuine connections, creating an atmosphere that feels like a second home.</p>
+
+        <p> <b>Our Mission - </b>At JP Cafe, our mission is to craft memorable experiences through exceptional coffee, warm hospitality, and a commitment to community. We strive to be a place where people can pause, connect, and savor the simple joys of life, one sip at a time.
         </p>
 
-        <h2>Our Story</h2>
-        <p>    In the vibrant city of Bacolod, Jurriel, Jegrick, and Patrick, inseparable friends with a shared love for coffee, dreamed of creating a haven for coffee enthusiasts called "JP Cafe." Their journey began one afternoon in Jurriel's cozy Home, where the trio talking out their vision for a welcoming and eclectic coffee space.
-
-Jegrick, the charismatic leader, envisioned JP Cafe reflecting their personalities. Jurriel, with his keen eye for design, imagined rustic tables, mismatched chairs, and walls adorned with local artwork. Patrick, the pragmatic strategist, delved into the business plan, researching the market and identifying suppliers.
-
-The importance of a unique menu became evident, with Patrick suggesting an international blend, while Jurriel and Jegrick coined creative names like the "Triple J Espresso," representing each of their initials. To fund their venture, they pooled savings, sought support from family and friends, and hosted community tasting events that fueled their determination.
-
-Jurriel spearheaded marketing, creating a vibrant social media presence, while Jegrick organized a mural contest for the cafe's exterior, showcasing local talent. With funding secured and a perfect location in the heart of Millington, the trio spent weekends transforming an old building into the charming JP Cafe.
-
-The grand opening was a success, with the aroma of freshly ground coffee and welcoming smiles drawing people from all corners of Millington. JP Cafe became a hub for coffee lovers, artists, and friends, symbolizing the enduring bond between Jurriel, Jegrick, and Patrick and their shared love for bringing people together over a cup of coffee.
+        <p><b>Our Vission - </b>Our vision extends beyond being a coffee destination; we aspire to be a cultural hub where creativity, conversation, and community thrive. JP Cafe envisions a future where every cup of coffee serves as a bridge connecting people, cultures, and stories.
         </p>
-        <br><br/>
-        <br><br/>
-        <br><br/>
-        <br><br/>
-        <br><br/>
-        <br><br/>
+
+        <p><b>Our Coffee - </b >We take pride in curating the finest coffee beans from around the world. Each cup at JP Cafe is a result of Jegrick's passion for sourcing and roasting beans that embody the richness of flavor and the spirit of authenticity. From the first sip to the last, our coffee is a journey of taste and quality.</p>
+
+        <p><b>Our Food - </b>Beyond our exceptional coffee, JP Cafe offers a delectable array of handcrafted food that complements the richness of our beverages. With love and attention to detail, our menu features a blend of international flavors and local favorites, designed to satisfy every palate, whether you're here for a quick bite or a leisurely meal.</p>
+
+        <p><b>Our Space - </b>Step into JP Cafe, and you'll find a space designed for comfort, creativity, and connection. Jurriel's touch is evident in the welcoming ambiance that encourages meaningful conversations and shared moments. Our cafe is more than just a place to grab a cup of coffee; it's a canvas for friendships to flourish and memories to unfold.</p>
+
+        <p><b>Our Commitments - </b>At JP Cafe, we are committed to sustainability, both in our sourcing practices and our impact on the environment. We strive to minimize our carbon footprint, support local communities, and ensure that every aspect of our operation reflects our dedication to responsible business practices.</p>
+
+        <p><b>Our Story - </b>Founded by Jegrick, Jurriel, and Patrick, our journey began with a shared passion for creating a unique and enriching coffee experience that transcends the ordinary. Jegrick's pursuit of excellence in sourcing and roasting, Jurriel's commitment to a warm and inviting atmosphere, and Patrick's innovative touch have converged to make JP Cafe a haven for coffee enthusiasts and social beings alike.</p>
+
+        <p>Join us at JPCafe, where Jegrick's curated beans, Jurriel's warm hospitality, and Patrick's technological innovation converge to create an experience that goes beyond the ordinary. Every visit is a chapter in the story of JPCafe, and we invite you to be a part of it. Cheers to the perfect blend of coffee and camaraderie!</p>
 
     </main>
 
-    <footer>
+      <footer>
+    <div class="footer-container">
+      <div class="footer-logo"><img src="img/logo.png" alt=""></div>
+      <div class="opening">
+        <h4>OPENING HOURS</h4>
+        <div class="opening-container">
+          <div class="date">
+            <p>MONDAY ••••••••••</p>
+            <p>TUESDAY ••••••••••</p>
+            <p>WEDSNESDAY ••••</p>
+            <p>THURSDAY ••••••••</p>
+            <p>FRIDAY ••••••••••••</p>
+            <p>SATURDAY ••••••••</p>
+            <p>SUNDAY •••••••••••</p>
+          </div>
+          <div class="hours">
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>10:00AM – 5:00PM</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="quick-links">
+        <h4>QUICK LINKS</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#team">Team</a>
+      </div>
+      
+      <div class="subscribe">
+        <h4>NEWSLETTER</h4>
+        <P>Stay updated for exclusive updates and flavorful surprises.</P>
+        <form action="#" id="subscribe-form">
+          <input type="email" placeholder="Email">
+          <a class="btn subscribeBtn" href="">SUBSCRIBE</a>
+        </form>
+      </div>
+    </div>
 
-
-    </footer>
-
+    <p class="copyright">© 2024 JP Café. All Rights Reserved.</p>
+  </footer>
     
 </body>
 </html>

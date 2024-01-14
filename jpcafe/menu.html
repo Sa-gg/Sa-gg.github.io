@@ -9,6 +9,8 @@
 
     <style>
 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
     * {
         margin: 0;
         padding: 0;
@@ -17,7 +19,7 @@
     }
 
     body {
-        font-family: 'Poppins', sans-serif;
+        font-family: sans-serif;
     }
 
     header {
@@ -49,6 +51,18 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media screen and (max-width: 600px) {
+        header {
+            align-items: center;
+        }
+
+        header div:last-child {
+            display: none;
+        }
+     }
+
+     /*  */
 
     .download-menu {
         display: flex;
@@ -214,6 +228,153 @@
         flex-direction: column;
         
     }
+    
+
+     /* FOOTER */
+    footer {
+        background-color: rgba(248, 248, 255, 0.527);
+        min-height: auto;
+        width: 100%;
+        padding-top: 2rem;
+        margin-top: 5rem;
+        font-family: 'Poppins';
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+
+    .footer-container > * {
+        height: auto;
+        width: auto;
+    }
+
+    .footer-container h4 {
+        font-size: 1rem;
+    }
+
+
+    /* logo */
+    .footer-logo {
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo > img {
+        height: 100px;
+        position: relative;
+    }
+
+
+
+
+    /* opening hours */
+    .opening-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .date > *, .hours > * {
+        margin-top: .2rem;
+    }
+
+    .date > p, .hours > p {
+        text-wrap: nowrap;
+        font-size: .9rem;
+    }
+
+
+    /* quick links */
+    .quick-links {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+    }
+
+    .quick-links > a {
+        text-decoration: none;
+        font-size: .9rem;
+    }
+
+    .quick-links > a:hover {
+        color:  #fb6503;
+    }
+
+
+    /* subscribe */
+    .subscribe {
+        width: 307px;
+    }   
+
+    .subscribe > p {
+        font-size: .9rem;
+    }
+
+    #subscribe-form {
+        display: flex;
+        justify-content: flex-start;    
+        margin-top: .8rem;
+        font-size: .9rem;
+    }
+
+    #subscribe-form > input {
+        padding: .5rem;
+        font-size: .9rem;
+        border: 2px solid #320001;
+        border-right: none;
+        outline: none;
+        border-radius: 5px 0 0 5px;
+
+    }
+
+    #subscribe-form > input:focus {
+        border: 2px solid #fb6503;
+        border-right: none;
+    }
+
+    #subscribe-form > a {
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: .5rem 1rem;
+        border: .2rem solid #320001;
+        color: #443;
+        
+    }
+
+    #subscribe-form > a:hover {
+        background-color: #fb6503;
+        color: white;
+        border-color: #fb6503;
+    }
+
+
+    .contact {
+        display: none;
+    }
+
+    .copyright {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+
+
+    @media screen and (max-width: 1422px) {
+        .footer-logo {
+            display: none;
+        }
+    }
 
     </style>
 
@@ -221,7 +382,7 @@
 <body>
 
     <header>
-        <div class="back"><a href="./#menu"><span class="material-symbols-outlined">arrow_back_ios_new</span>BACK</a></div>
+        <div class="back"><a href="./#menu"><span class="material-symbols-outlined">arrow_back_ios_new</span>HOME</a></div>
         <div class="logo"><img src="/img/logo1.png" alt=""></div>
         <div></div>
     </header>
@@ -614,9 +775,53 @@
     </main>
 
     <footer>
+    <div class="footer-container">
+      <div class="footer-logo"><img src="img/logo.png" alt=""></div>
+      <div class="opening">
+        <h4>OPENING HOURS</h4>
+        <div class="opening-container">
+          <div class="date">
+            <p>MONDAY ••••••••••</p>
+            <p>TUESDAY ••••••••••</p>
+            <p>WEDSNESDAY ••••</p>
+            <p>THURSDAY ••••••••</p>
+            <p>FRIDAY ••••••••••••</p>
+            <p>SATURDAY ••••••••</p>
+            <p>SUNDAY •••••••••••</p>
+          </div>
+          <div class="hours">
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>9:00AM – 5:00PM</p>
+            <p>10:00AM – 5:00PM</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="quick-links">
+        <h4>QUICK LINKS</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#team">Team</a>
+      </div>
+      
+      <div class="subscribe">
+        <h4>NEWSLETTER</h4>
+        <P>Stay updated for exclusive updates and flavorful surprises.</P>
+        <form action="#" id="subscribe-form">
+          <input type="email" placeholder="Email">
+          <a class="btn subscribeBtn" href="">SUBSCRIBE</a>
+        </form>
+      </div>
+    </div>
 
-
-    </footer>
+    <p class="copyright">© 2024 JP Café. All Rights Reserved.</p>
+  </footer>
 
     
 </body>
