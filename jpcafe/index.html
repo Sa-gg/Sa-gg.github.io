@@ -200,13 +200,15 @@
       
         <div class="book">
 
-          <form action="#" id="book-form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="number" placeholder="Number">
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <a class="btn sendMessage" href="#">Send Message</a>
-          </form>
+          <form name="submit-to-google-sheet" id="book-form" action="https://script.google.com/macros/s/AKfycbwuKTFGBPUnt2g42Mpac4NfAeDvVyV-xtpmztAucmVeeoIg4h0divymggx7T2rHiZQB/exec" method="POST">
+            <input type="text" name="Name" placeholder="Name">
+            <input type="email" name="Email" placeholder="Email">
+            <input type="number" name="Number" placeholder="Number">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button class="btn sendMessage" type="submit" >Submit Reservation</button>
+        </form>
+          <br>
+          <span id="msg" style="display: block; font-weight: bolder; text-align: center;"></span>
         </div>
     </section>
 
@@ -261,5 +263,25 @@
     <p class="copyright">© 2024 JP Café. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+
+  <script>
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const scriptURL = form.action;
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+              msg.innerHTML = "Reservation sent successfully!"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+
 </body>
 </html>
