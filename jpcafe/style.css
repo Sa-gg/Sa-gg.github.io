@@ -330,6 +330,7 @@ section {
 .about-text > p {
     line-height: 1.5;
     text-indent: 1rem;
+    text-align: justify;
 }
 
 .about-p1 {
