@@ -266,20 +266,24 @@
 
   <script>
     const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById("msg")
+    const msg = document.getElementById("msg");
 
     form.addEventListener('submit', e => {
         e.preventDefault();
+        msg.innerHTML = "Sending...";
         const scriptURL = form.action;
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(response => {
-              msg.innerHTML = "Reservation sent successfully!"
-              setTimeout(function(){
-                msg.innerHTML = ""
-              },5000)
-              form.reset()
+                msg.innerHTML = "Reservation sent successfully!";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
             })
-            .catch(error => console.error('Error!', error.message));
+            .catch(error => {
+                console.error('Error!', error.message);
+                msg.innerHTML = "Error sending reservation. Please try again.";
+            });
     });
 </script>
 
