@@ -314,17 +314,21 @@
         display: flex;
         gap: 3rem;
         margin-bottom: .5rem;
-    }
+    } 
 
+     .food-row2, .food-row3 {
+        display: flex;
+        justify-content: center;
+    }
 
     .waffles {
-        max-width: 1100px;
-        margin-inline: auto;
+        width: 1100px;
+        margin-inline: 1rem;
         border-radius: 10px;
-        padding: 2rem;
+        padding: 1.5rem;
         margin-top: 2rem;
     }
-
+   
     .waffles-images {
         display: flex;
         justify-content: space-between;
@@ -342,8 +346,8 @@
     }
 
     .salads {
-        max-width: 1100px;
-        margin-inline: auto;
+        width: 1100px;
+        margin-inline: 1rem;
     }
 
     .salad {
@@ -354,10 +358,6 @@
     }
 
     @media screen and (max-width: 589px) {
-        .waffles, .salads {
-            margin-inline: .9rem;
-        }
-
         .waffles-images {
             justify-content: space-around;
         }
@@ -1047,7 +1047,7 @@
         </div>
 
         <div class="food-row2">
-            <fieldset class="waffles">
+                 <fieldset class="waffles">
               <legend style="text-align: center;"><h2>SWEET AND SAVORY WAFFLES</h2></legend>
                 <div class="waffles-images"><img src="img/waffle1.png" alt=""><img src="img/waffle2.png" alt=""></div>
 
@@ -1093,6 +1093,7 @@
                     <p>295</p>
                 </div>  
             </fieldset>
+
         </div>
 
         <div class="food-row3">

@@ -1,5 +1,6 @@
-// HAMBURGER NAV ANIMATION
 window.onload = function () {
+
+    // HAMBURGER NAV ANIMATION
     const menu_btn = document.querySelector('.hamburger');
     const nav_bar = document.querySelector('.mobile-nav')
     const anchors = document.querySelectorAll('.nav')
@@ -32,6 +33,28 @@ window.onload = function () {
         menu_btn.classList.toggle('is-active')
         nav_bar.classList.toggle("is-active")
     })
+
+    // BOOKING
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        msg.innerHTML = "Sending...";
+        const scriptURL = form.action;
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Reservation sent successfully!";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                msg.innerHTML = "Error sending reservation. Please try again.";
+            });
+    });
 }
 
 
