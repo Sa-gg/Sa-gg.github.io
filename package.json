@@ -1,0 +1,24 @@
+{
+  "name": "timeproject-npm-git",
+  "version": "1.0.0",
+  "description": "Time Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "ls": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sa-gg/try.git"
+  },
+  "author": "Patrick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sa-gg/try/issues"
+  },
+  "homepage": "https://github.com/Sa-gg/try#readme",
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "timezone": "^1.0.23"
+  }
+}
