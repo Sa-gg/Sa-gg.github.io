@@ -13,8 +13,7 @@ const tz = "America/New_York"
 function updateClock() {
     const myDate = new Date();
     var timeZone = dayjs.tz.guess();
-    // var time = dayjs(myDate).format('HH:mm:ss');
-    const time = dayjs(myDate).format('HH:mm:ss').split(':').map(num => num.padStart(2, '0')).join(':');
+    var time = dayjs(myDate).format('HH:mm:ss');
     var date = dayjs(myDate).format('dddd[, ]D[ ]MMMM[, ]YYYY');
 
     document.getElementById("timezone").innerHTML = timeZone;
