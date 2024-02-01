@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://digwallpapers.com/wallpapers/full/f/0/2/96533-3840x2160-rain-forest-wallpaper-photo-desktop-4k.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    width: 320px;
+    height: 70px;
+    bottom: 25%;
+    left: 10%;
+    background: transparent;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    color: rgba(255, 255, 255, 0.747);
+    box-shadow: 0 0 3px black;
+    transition: .2s;
+}
+
+
+button:hover {
+    border-color:rgba(255, 255, 255, 0.397);
+    background-color: rgba(0, 0, 0, 0.911);
+    transition: .3s;
+}
+
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.425);
+    z-index: 1;
+    
+}
+
+.modal {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 1rem;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    animation: toCenter .5s;
+    border-radius: 10px;
+}
+
+
+@keyframes toCenter {
+    from {
+        top: -10rem;
+        opacity: 0;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.modal p:last-child {
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal p:last-child:hover {
+    color: red;
+}
