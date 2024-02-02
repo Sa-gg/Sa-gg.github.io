@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.style.display = "none"
     })
 
-
     window.addEventListener("click", function(e) {
       if (e.target === modal) {
         modal.style.display = "none"
@@ -21,4 +20,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
 
-});s
+});
