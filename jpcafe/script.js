@@ -10,29 +10,40 @@ window.onload = function () {
     window.addEventListener('scroll', function() {
         var scrollPosition = window.scrollY;
         
-        if (scrollPosition > lastScrollTop) {
-            // Scrolling down
-            header.style.top = '-90px'; 
-        } else {
-            // Scrolling up
-            header.style.top = '0';
+        if (!menu_btn.classList.contains('is-active')) {
+            if (scrollPosition > lastScrollTop) {
+                // Scrolling down
+                header.style.top = '-90px'; 
+            } else {
+                // Scrolling up
+                header.style.top = '0';
+            }
         }
+
+       
+
+        
     
         lastScrollTop = scrollPosition;
     })
+    
     
 
     anchors.forEach((anchors) => {
         anchors.addEventListener("click", function () {
             menu_btn.classList.toggle('is-active')
             nav_bar.classList.toggle("is-active")
+
+            
         })
     })
-    
+
     menu_btn.addEventListener("click", function () {
         menu_btn.classList.toggle('is-active')
         nav_bar.classList.toggle("is-active")
     })
+
+    
 
     // BOOKING
     const form = document.forms['submit-to-google-sheet'];
