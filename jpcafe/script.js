@@ -19,11 +19,6 @@ window.onload = function () {
                 header.style.top = '0';
             }
         }
-
-       
-
-        
-    
         lastScrollTop = scrollPosition;
     })
     
