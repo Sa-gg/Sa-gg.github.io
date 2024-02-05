@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.418)), url(bg.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    background-color: white;
+    padding: 3rem 5rem;
+    border-radius: 30px;
+    box-shadow: 0 0 3px;
+}
+
+p {
+    font-size: 5rem;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+button {
+    border: none;
+}
+
+.fa-rotate-left, .fa-play, .fa-pause {
+    color: white;
+    padding: .5rem .5rem;
+    font-size: 2.5rem;
+    border-radius: 2px;
+    width: 60px;
+    border: none;
+}
+
+.fa-play {
+    background-color: green;
+}
+
+.fa-rotate-left {
+    background-color: red;
+}
+
+.fa-pause {
+    background-color: orange;
+}
