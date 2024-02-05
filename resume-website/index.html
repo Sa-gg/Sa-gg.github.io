@@ -1,0 +1,232 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://drive.google.com/uc?id=1rz-jQrk-R9pQlZaNgIW970zPYmbBAAAD" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/1ef88bc824.js" crossorigin="anonymous"></script>
+    <title>SAG Resume</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="sag-logo6.png" alt="logo" />
+        <h2></h2>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#profile" onclick="toggleContent('profile')">Profile</a></li>
+          <li><a href="#skills" onclick="toggleContent('skills')">Skills</a></li>
+          <li><a href="#education" onclick="toggleContent('education')">Education</a></li>
+          <li><a href="#experience" onclick="toggleContent('experience')">Experience</a></li>
+          <li><a href="#contact" onclick="toggleContent('contact')" id="highligthed-contact" >Let's Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile" class="content-section active">
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-pic-container">
+                <img src="https://i.pinimg.com/736x/be/e9/48/bee948d69ba5a8aa32d5aa6ce81af029.jpg" alt="" class="profile-pic" />
+                </div>
+
+                <h1>Patrick R. Sagum</h1>
+                <p>A Passionate Full Stack Developer.</p>
+                <div class="icon">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-git"></i>
+                </div>
+            </div>
+            <div class="about-me">
+            <p>
+              As a dedicated full-stack developer, I bring a wealth of expertise
+              in web design and development to the table. Currently seeking new
+              opportunities, I specialize in creating seamless and responsive
+              websites, ensuring a comprehensive user experience from front-end
+              design to back-end functionality.
+            </p>
+            <p>
+              If you're in need of a skilled professional to enhance your online
+              presence or spearhead the development of a new website, I'm here
+              to help. Please use the button below to reach out, and we can
+              discuss your project requirements in detail. I'm excited about the
+              prospect of leveraging my full-stack development skills to
+              contribute to the success of your endeavors. Looking forward to
+              the opportunity!
+            </p>
+            <div><button id="btn"  onclick="toggleContent('contact')">Contact Me</button></div>
+          </div>
+
+          <section id="skills" class="content-section">
+            <h1>My Skills</h1>
+            <div class="skills-container">
+              <div class="skills-container1">
+                <h2>Front-End Development</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+              
+                <h2>Back-End Development</h2>
+                <ul>
+                    <li>Java</li>
+                </ul>
+
+                <h2>Version Control</h2>
+                <ul>
+                    <li>Git</li>
+                    <li>Github</li>
+                </ul>
+
+                
+                </div>
+
+                <div class="skills-container1">
+                    <h2>Soft Skills</h2>
+                <ul>
+                    <li>Effective Communication</li>
+                    <li>Strong Problem Solving</li>
+                    <li>Attention to Detail</li>
+                    <li>Collaborative Team Player</li>
+                    <li>Adaptable Learner</li>
+                    <li>Time Management Excellence</li>
+                    <li>Customer-Centric Approach</li>
+                </ul>
+
+                    <h2>Others</h2>
+                <ul>
+                    <li>Basic Computer Troubleshooting</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="education" class="content-section">
+            <h1>Education</h1>  
+            <div class="education-container">
+                  <div class="education-col">
+                    <div class="education-box">
+                      <div class="education-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2017 - 2021</div>
+                          <h3>Junior High School - Negros Occidental High School</h3>
+                          <p>- Araneta-Hernaez Street, Barangay 39, Bacolod City, Negros Occidental, 6100, Philippines </p>
+                        </div>
+                      </div>
+
+                      <div class="education-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2021 - 2023</div>
+                          <h3>Senior High School (ICT) - Negros Occidental High School</h3>
+                          <p>- Araneta-Hernaez Street, Barangay 39, Bacolod City, Negros Occidental, 6100, Philippines </p>
+                        </div>
+                      </div>
+
+                      <div class="education-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2023 - Present</div>
+                          <h3>Bachelor of Science in Information Technology - Carlos Hilado Memorial State University</h3>
+                          <p>- Barangay Alijis, Bacolod City, Negros Occidental, 6100, Philippines</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+  
+          <section id="contact" class="content-section">
+            <div class="contact-container">
+                <div class="con-icons">
+                    <div><i class="fa-solid fa-location-dot"></i><p>Negros Occidental, PH</p></div>
+                    <div><i class="fa-solid fa-envelope"></i></i><p>sagum.patrick.r@gmail.com</p></div>
+                    <div><i class="fa-solid fa-phone"></i><p>+639511617493</p></div>
+                </div>
+
+                 <p>Feel free to contact me or you can fill up the form for inquiries</p>
+
+                <form action="#" id="contact-form">
+                <div class="form-group">
+                    <label for="fullName">Name</label>
+                    <input  name="fullName" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input  name="Email" type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" type="text" cols="50" rows="4" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="con-btn">Submit</button>
+                </form>
+            </div>
+         </section>
+
+        </div>
+      </section>
+
+      <section id="experience" class="content-section">
+        <div class="experience-container">
+          <div class="experience-row">
+            <div class="experience-col">
+              <h1>Work Experience</h1>
+                    <div class="experience-box">
+                      <div class="experience-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2020 - Present</div>
+                          <h3>Computer Shop Sales Associate | VERK Computer Shop</h3>
+                          <p>Maintained records, proficiently troubleshoot technical issues, resolved complaints, conducted computer repairs and upgrades for high customer satisfaction.</p>
+                        </div>
+                      </div>
+
+                      <div class="experience-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> 2016 - Present</div>
+                          <h3>Sales Associate | SAGUM Sari-Sari Store</h3>
+                          <p>Assisted customers, managed inventory, maintained store organization, developed product knowledge, and created store</p>
+                        </div>
+                      </div>
+
+                      <div class="experience-content">
+                        <div class="content">
+                          <div class="year"><i class="fa-solid fa-calendar-days"></i> #### - ####</div>
+                          <h3>Vacant | Vacant</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi molestiae nobis iste quo earum, perferendis quae facilis totam est, eligendi saepe omnis ut odio voluptatibus in fugit corporis fuga.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+              <div class="experience-col">
+                <h1>Projects</h1>
+                <div class="projects">
+                  <div class="project project-one"></div>
+                  <div class="project project-two"></div>
+                </div>
+              </div>
+          </div>
+                
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="https://github.com/Sa-gg" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/patrick-sagum-b5589b248/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/patrick.sagum.144?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <p>Copyright © 2023. All rights are reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
