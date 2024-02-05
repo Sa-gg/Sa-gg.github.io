@@ -10,6 +10,7 @@
 
 body {
   background-color: ghostwhite;
+  overflow-y: scroll;
 }
 
 header {
@@ -20,6 +21,19 @@ header {
   align-items: center;
   padding-left: 150px;
   padding-right: 170px;
+  animation: animateNav .7s ease-in-out;
+}
+
+@keyframes animateNav {
+  from {
+   transform: translateY(-40%);
+   opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 /* NAVBAR */
@@ -31,6 +45,8 @@ header {
   display: inline-block;
   margin-right: 1rem;
 }
+
+
 
 .nav-bar > ul > li > a {
   text-decoration: none;
@@ -79,7 +95,6 @@ header {
 #highligthed-contact:hover {
   background-color: #0d6dfdcc;
 }
-
 
 section {
   animation:  animate .7s ease-in-out;  
@@ -171,6 +186,18 @@ section {
 .icon {
   display: flex;
   gap: 1.9rem;
+  animation: animateIcon 1s steps(4, end);
+}
+
+
+@keyframes animateIcon {
+  from {
+    gap: .5rem;
+  }
+
+  to {
+    gap: 1.9rem
+  }
 }
 
 .icon > i {
@@ -592,24 +619,38 @@ textarea.form-control {
 
 /* FOOTER */
 
+footer {
+  animation: animateFooter .7s;
+}
+
+@keyframes animateFooter {
+  from {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 footer > div {
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.8rem;
+  gap: 3rem;
+  margin-top: 1rem  ;
 }
 
 footer > p {
   text-align: center;
   font-style: italic;
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 0.9rem;
 }
 
-footer > div > a > i {
-  padding: 1rem;
-}
 
 .fa-facebook {
   color: #1877f2;
