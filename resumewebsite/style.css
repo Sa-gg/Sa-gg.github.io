@@ -80,6 +80,23 @@ header {
   background-color: #0d6dfdcc;
 }
 
+
+section {
+  animation:  animate .7s ease-in-out;  
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+
 /* PROFILE */
 .profile-container {
   display: flex;
@@ -200,14 +217,18 @@ header {
 /* SKILLS */
 #skills {
   height: 550px;
-  width: 55%;
+  width: 55%;  
 }
+
 
 #skills > h1 {
   font-size: 2.5rem;
   padding: 2rem 0 0.5rem;
   font-weight: 600;
+  
 }
+
+
 
 .skills-container {
   height: 100%;
@@ -441,7 +462,7 @@ header {
 }
 
 .project-one::before {
-  content: "Portfolio Website";
+  content: "Coming Soon!";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,7 +482,7 @@ header {
 }
 
 .project-two::before {
-  content: "Project 2";
+  content: "Coming Soon!";
   display: flex;
   justify-content: center;
   align-items: center;
