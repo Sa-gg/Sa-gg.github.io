@@ -73,9 +73,7 @@ body {
 
 .task {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 1.2rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.432);
@@ -89,6 +87,11 @@ body {
 
 .task p {
     font-size: 1.2rem;
+    word-wrap: break-word;
+    text-wrap: wrap;
+    text-overflow: clip;
+    width: 68%;
+    padding-right: 1.5rem;
 }
 
 
