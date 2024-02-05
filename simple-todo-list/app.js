@@ -4,16 +4,22 @@ let taskContainer = document.querySelector(".tasks-container")
 
 
 addTaskBtn.addEventListener("click", function() {
-    let newTask = document.createElement("div")
-    newTask.classList.add("task")
-    newTask.innerHTML = 
-    `<p>${newTaskText.value}</p>
-    <div class="checkDeleteTask">
-        <i class="fa-solid fa-check check"></i>
-        <i class="fa-solid fa-trash-can remove"></i>
-    </div>`
-    taskContainer.appendChild(newTask)
-    newTaskText.value = ""
+
+    if (newTaskText.value != "") {
+        let newTask = document.createElement("div")
+        newTask.classList.add("task")
+        newTask.innerHTML = 
+        `<p>${newTaskText.value}</p>
+        <div class="checkDeleteTask">
+            <i class="fa-solid fa-check check"></i>
+            <i class="fa-solid fa-trash-can remove"></i>
+        </div>`
+        taskContainer.appendChild(newTask)
+        newTaskText.value = ""
+        
+    } 
+    
+    
 })
 
 
