@@ -186,13 +186,14 @@ section {
 .icon {
   display: flex;
   gap: 1.9rem;
-  animation: animateIcon 1s steps(4, end);
+  animation: animateIcon 1s steps(4, end) 0.3s both;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 
 @keyframes animateIcon {
   from {
-    gap: .5rem;
+    gap: .9rem;
   }
 
   to {
