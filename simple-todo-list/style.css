@@ -21,6 +21,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 3px;
     display: flex;
+    margin-top: 3rem;
     
 }
 
@@ -69,6 +70,8 @@ body {
     width: 370px;
     padding: 2rem 1rem;
     border-radius: 10px;
+    overflow-y: auto;
+    margin-bottom: 3rem;
 }
 
 
