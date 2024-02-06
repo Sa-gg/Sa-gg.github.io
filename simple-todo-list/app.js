@@ -16,6 +16,8 @@ function addNewTask() {
         newTaskText.value = "";
 
         checkAndDisplayContainer();
+    } else {
+        alert("Please Enter a Task")
     }
 }
 
