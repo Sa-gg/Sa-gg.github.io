@@ -16,13 +16,11 @@ addTaskBtn.addEventListener("click", function() {
         </div>`
         taskContainer.appendChild(newTask)
         newTaskText.value = ""
-        
+        checkAndDisplayContainer();
     } 
     
     
 })
-
-
 
 taskContainer.addEventListener("click", function(event) {
     const target = event.target;
@@ -40,7 +38,15 @@ taskContainer.addEventListener("click", function(event) {
 
     if (target.classList.contains("remove")) {
         target.parentNode.parentNode.remove()
+        checkAndDisplayContainer();
     }
-    
 
 });
+
+function checkAndDisplayContainer() {
+    if (taskContainer.childElementCount > 0) {
+        taskContainer.style.display = "block";
+    } else {
+        taskContainer.style.display = "none";
+    }
+}

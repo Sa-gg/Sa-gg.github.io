@@ -64,6 +64,7 @@ body {
 
 
 .tasks-container {
+    display: none;
     background-color: white;    
     width: 370px;
     padding: 2rem 1rem;
@@ -126,4 +127,9 @@ body {
 .checkDeleteTask .fa-trash-can:hover {
     background-color: red;
     color: white;
+}
+
+
+.tasks-container h2 {
+    text-align: center;
 }
