@@ -86,7 +86,9 @@
             <div class="home-container">
                 <h1>Deliver Faster</h1>
                 <p>On-demand delivery platform. Get your order matched in 3 seconds.</p>
-                <button type="button" class="btn btn-primary btn-lg" id="book-btn">Book Now</button>
+                <a href="#booking" class="btn btn-primary btn-lg" id="book-btn">Book Now</a>
+
+
 
             </div>
 
@@ -95,14 +97,13 @@
 
 
         <!-- SERVICES -->
-        <section  id="services">
-
+        <section  id="services" class="pt-5 pb-5">
           <div class="container">
             <h2 class="text-center mb-5 mt-5 text-orange"><b>Our Services</b></h2>
-            <div class="row justify-content-center">
+            <div class="row justify-content-between">
               
               <!-- Fast Delivery Card -->
-              <div class="col-md-4 mb-4">
+              <div class="col-md-4">
                 <div class="card shadow-sm border-light">
                   <img class="card-img-top" src="fast-delivery.jpg" alt="Fast Delivery">
                   <div class="card-body">
@@ -113,7 +114,7 @@
               </div>
         
               <!-- Real-Time Tracking Card -->
-              <div class="col-md-4 mb-4">
+              <div class="col-md-4">
                 <div class="card shadow-sm border-light">
                   <img class="card-img-top" src="time-tracking.jpg" alt="Real Time Tracking">
                   <div class="card-body">
@@ -124,7 +125,7 @@
               </div>
         
               <!-- Affordable Rates Card -->
-              <div class="col-md-4 mb-4">
+              <div class="col-md-4">
                 <div class="card shadow-sm border-light">
                   <img id="card-img-3" class="card-img-top" src="affordable-rates.jpg" alt="Affordable Rates">
                   <div class="card-body">
@@ -133,31 +134,63 @@
                   </div>
                 </div>
               </div>
-        
             </div>
           </div>
-
-          
-
-
         </section>
 
 
         <!-- BOOKING -->
-        <section id="booking">
-
-          <h2 class="text-center mb-5 mt-5 text-orange"><b>Booking</b></h2>
-
-
+        <section id="booking" class="pt-5 pb-5">
+          <h2 class="text-center text-orange mb-5"><b>Booking</b></h2>
+          <div class="container booking-container">
+            <div class="card shadow p-3">
+              <div class="card-body">
+                <form action="">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3 text-orange">
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                      </div>
+                      <div class="form-group mb-3 text-orange">
+                        <label for="phone"><b>Phone Number</b></label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                      </div>
+                      <div class="form-group mb-3 text-orange">
+                        <label for="time"><b>Time</b></label>
+                        <input type="time" class="form-control" id="time">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3 text-orange">
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                      </div>
+                      <div class="form-group mb-3 text-orange">
+                        <label for="date"><b>Date</b></label>
+                        <input type="date" class="form-control" id="date">
+                      </div>
+                      <div class="form-group mb-3 text-orange">
+                        <label for="parcel"><b>Parcel Category</b></label>
+                        <input type="text" class="form-control" id="parcel" placeholder="Enter parcel category">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-3 text-orange">
+                    <label for="requests"><b>Special Requests</b></label>
+                    <textarea class="form-control" id="requests" rows="3" placeholder="Enter any special requests"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100" id="book-btn"><b>Submit</b></button>
+                </form>
+              </div>
+            </div>
+          </div>
         </section>
-        
-        
-    
       </body>
 
 
       <!-- FOOTER -->
-      <footer class="bg-dark text-white mt-5">
+      <footer class="bg-dark text-white">
         <div class="container py-4">
           <div class="row">
             <div class="col-md-4">

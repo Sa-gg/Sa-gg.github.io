@@ -12,7 +12,7 @@ window.onload = function () {
           link.style.color = 'black';
         });
 
-        searchInput.style.border = '2px solid orange';
+        searchInput.style.border = '3px solid orange';
       } else {
         navbar.classList.remove('bg-body-tertiary');
         navbar.classList.add('bg-transparent');
@@ -21,7 +21,7 @@ window.onload = function () {
           link.style.color = 'white';
         });
 
-        searchInput.style.borderColor = '';
+        searchInput.style.border = '3px solid black';
       }
     });
   };
