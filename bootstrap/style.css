@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+} 
+
+
+.logo {
+    height: 90px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(252,128,2,255);
+}
+
+
+.navbar .dropdown-menu ul>li>a {
+    color: black;
+}
+
+.navbar .nav-item>.nav-link {
+    color: white;
+}
+
+#search-input:focus {
+    border: 2px solid rgba(252, 128, 2, 1) !important; /* Add custom border color */
+    outline: none !important; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(252, 128, 2, 1) !important; /* Optional: add a soft shadow */
+}
+
+
+#search-btn {
+    background-color: rgba(252,128,2,255);
+    border: none;
+    color: white;
+}
+
+/* HOME */
+
+#home {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.home-container {
+    padding-top: 15%;
+    padding-left: 10%;
+    color: white;
+    
+}
+
+.home-container h1 {
+    font-size: 5.5rem;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+}
+
+#book-btn {
+    background-color: rgba(252,128,2,255);
+    padding: .8rem 3rem;
+    border: none;
+}
+
+
+
