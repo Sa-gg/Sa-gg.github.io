@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    body {
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 295px;
+        border-radius: 10px;
+        box-shadow: 0 0 3px;
+        padding: 1rem .5rem;
+
+    }
+
+    img {
+        display: none;
+        max-width: 80%;
+        height: 80%;
+        margin-inline: auto;
+        
+    }
+
+</style>
+
+<body>
+
+    
+    <div class="container">
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
+        <button onclick="fetchData()">Fetch Pokemon</button>
+
+        <img src="" alt="Pokemon Sprite" id="pokemonSprite">
+    </div>
+
+
+    
+
+    <script>
+
+
+        async function fetchData() {
+            try {
+
+                const pokemonName = document.querySelector("#pokemonName").value.toLowerCase();
+                const pokemonSprite = document.querySelector("#pokemonSprite")
+
+
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+
+                if (!response.ok) {
+                    throw new Error("Could not fetch resource")
+
+                }
+
+                const data = await response.json();
+                console.log(data.sprites.other.home.front_default)
+                pokemonSprite.src = `${data.sprites.other.home.front_default}`
+                pokemonSprite.style.display = "block"
+    
+    
+              
+            }
+            catch(error) {
+                console.log(error)
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/1ef88bc824.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div  id="logo"> 
+        <i class="fa-solid fa-code"></i>
+        <h2>Sag.dev</h2>
+        </div>
+      </div>
+
+      <i class="fa-solid fa-bars" id="nav-toggle" onclick="toggleNav()"></i>
+    
+      <nav id="navbar">
+        <ul>
+          <li><a href="#welcome-section" onclick="closeNav()">Home</a></li>
+          <li><a href="#about-me" onclick="closeNav()">About</a></li>
+          <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+          <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="welcome-section">
+
+        <div class="upper">
+
+          <div class="welcome-section-text">
+            <h1>Front-End Web Developer</h1>
+            <p>Hi, I'm Patrick Sagum, a passionate Front-end Developer based in Phillipines, Negros Occidental, Bacolod City📍</p>
+            <a href="https://www.linkedin.com/in/patrick-sagum-b5589b248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Sa-gg" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/patrick.sagum.144?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+
+          <div class="profile-img-container"><img src="https://preview.redd.it/230523-haerin-phoning-photo-update-v0-3euavwbjmk1b1.jpg?width=640&crop=smart&auto=webp&s=28f559d6d4ae1026cf1ad3227b7e5e53fd4fc8d3" id="profile-img"></div>
+
+        </div>
+
+        <div class="stack">
+          <p>Tech Stack</p>
+          <p>|</p>
+          <ul>
+            <li><i class="fa-brands fa-html5" style="color: #e34c26;"></i></li>
+
+            <li><i class="fa-brands fa-css3-alt" style="color: #264de4;"></i></li>
+
+            <li><i class="fa-brands fa-js" style="color: #f0db4f;"></i></li>
+
+            <li><i class="fa-brands fa-react" style="color: #61dbfb;"></i></li>
+          </ul>
+        </div>
+
+      </section>
+
+
+
+     <section id="about-me">
+
+        <div id="about-me-container">
+
+          <img src="https://cdn.pixabay.com/photo/2017/12/29/11/51/coffee-3047394_1280.jpg">
+
+          <div>
+
+            <h2>ABOUT ME</h2>
+
+            <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, impedit magni quod quisquam nobis veritatis, suscipit nihil dolorem vel dignissimos illo amet ipsa minima maiores facilis! Eaque hic eius vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, impedit magni quod quisquam nobis veritatis, suscipit nihil dolorem vel dignissimos illo amet da asda.
+
+</p>
+            <div class="button-container"><button id="cv" onclick="viewPDF()">View My Resume</button></div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <section id="projects"> 
+        <h2>PROJECTS</h2>
+        <div class="project-tile">
+          <div class="project-img"><a href="https://github.com/Sa-gg" id="profile-link" target="_blank"><img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"></a></div>
+          <div class="project-details">
+            <h2 id="project-heading">Project Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, impedit magni quod quisquam nobis veritatis, suscipit nihil dolorem vel dignissimos illo amet ipsa minima maiores facilis! Eaque hic eius vero.
+</p>
+          </div>
+        </div>
+        <div class="project-tile reverse">
+          <div class="project-details">
+            <h2 id="project-heading">Project Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, impedit magni quod quisquam nobis veritatis, suscipit nihil dolorem vel dignissimos illo amet ipsa minima maiores facilis! Eaque hic eius vero.
+</p>
+          </div>
+          <div class="project-img"><a href="https://github.com/Sa-gg" id="profile-link" target="_blank"><img src="https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"></a></div>
+        </div>
+        <!-- <div class="project">
+          <div class="project-img"><img src="#"></div>
+          <div class="project-details"></div>
+        </div>
+        <div class="project reverse">
+          <div class="project-details"></div>
+          <div class="project-img"><img src="#"></div>
+        </div> -->
+
+      </section>     
+
+
+    <section id="contact">
+  
+      <h2>Let's Work Together...</h2>
+      <p><i>how do you take your coffee?</p>
+      <div class="contact-icon-container">
+   <a href="https://www.facebook.com/patrick.sagum.144?mibextid=ZbWKwL" target="_blank" class="contact-details"><i class="fa-brands fa-facebook"></i></a>
+   <a href="https://github.com/Sa-gg" target="_blank" class="contact-details"><i class="fa-brands fa-github"></i></a>
+   <a href="#" class="contact-details"><i class="fa-brands fa-twitter"></i></a>
+   <a href="#" class="contact-details"><i class="fa-solid fa-at"></i></a>
+   <a href="#" class="contact-details"> <i class="fa-solid fa-mobile-screen"></i></a>
+</div>
+    
+    </section>
+    </main>
+
+    <footer>
+     <p>Copyright © 2023. All rights are reserved</p>
+    </footer>
+
+
+  <script>
+    function toggleNav() {
+      var navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active")
+    }
+
+    function closeNav() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.remove("active");
+    }
+
+
+    function viewPDF() {
+    const pdfLink = 'https://drive.google.com/file/d/1ehUxkp4Ct0lFaSs6IZ8oCE674GJ1ho4K/view?usp=sharing';
+
+    window.open(pdfLink);
+  }
+
+
+  </script>
+  </body>
+</html>
+
+<!-- <img src="sag-pp.png" id="profile-img"> -->
