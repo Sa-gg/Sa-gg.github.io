@@ -63,9 +63,9 @@ body {
 /* HOME */
 
 #home {
-    background-image: url(bg.jpg);
-    /* background: linear-gradient(rgba(0, 0, 0, 0.111), rgba(0, 0, 0, 0.111)), 
-                url(bg.jpg); */
+/*     background-image: url(bg.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), 
+                url(img/bg.jpg); 
     background-size: cover;
     min-height: 100vh;
     width: 100%;
@@ -100,6 +100,88 @@ body {
     border: none;
 }
 
+
+
+@media screen and (max-width: 1393px) {
+
+    .home-container {
+        padding-top: 22%;
+    }
+
+    .home-container h1 {
+        font-size: 4rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    #book-btn {
+        background-color: rgba(252,128,2,255);
+        padding: .5rem 2rem;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .home-container {
+        padding-top:30%;
+    }
+
+    .home-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    #book-btn {
+        background-color: rgba(252,128,2,255);
+        padding: .5rem 2rem;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .home-container {
+        padding-top:40%;
+    }
+
+    .home-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-container p {
+        font-size: 1rem;
+    }
+
+    #book-btn {
+        background-color: rgba(252,128,2,255);
+        padding: .5rem 2rem;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-container {
+        padding-top:45%;
+    }
+
+    .home-container h1 {
+        font-size: 3rem;
+    }
+
+    .home-container p {
+        font-size: .9rem;
+    }
+
+    #book-btn {
+        background-color: rgba(252,128,2,255);
+        padding: .5rem 2rem;
+        border: none;
+    }
+}
 
 /* SERVICES */
 
@@ -147,6 +229,3 @@ body {
 .text-orange{
     color: rgba(252,128,2,255);
 }
-
-
-
