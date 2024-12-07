@@ -19,6 +19,7 @@ body {
     width: 100%;
     transition: background-color .3s ease;
     z-index: 999;
+    padding-inline: 2vw;
 }
 
 .navbar-brand {
@@ -27,7 +28,7 @@ body {
 
 
 .logo {
-    height: 90px;
+    height: 80px;
 }
 
 .navbar-brand {
@@ -47,23 +48,40 @@ body {
 
 }
 
-#search-input:focus {
-    border: 2px solid rgba(252, 128, 2, 1) !important; /* Add custom border color */
-    outline: none !important; /* Remove default outline */
-    box-shadow: 0 0 5px rgba(252, 128, 2, 1) !important; /* Optional: add a soft shadow */
+
+.signup-item {
+    background-color: rgba(252,128,2,255);
+    border-radius: 6px;
+    padding-inline: .7rem;
 }
 
 
-#search-btn {
-    background-color: rgba(252,128,2,255);
-    border: none;
+.navbar ul:last-of-type .nav-item{
+    margin-right: 1.5rem;
+}
+
+.navbar ul:last-of-type .nav-item {
+    display: flex;
+    align-items: center;
     color: white;
 }
+
+.fa-globe {
+    font-size: 1.2rem;
+    margin-right: .4rem;
+    transition: color .3s ease;
+}
+
+.bx-user {
+    font-size: 1.6rem;
+    margin-right: .4rem;
+    transition: color .3s ease;
+}
+
 
 /* HOME */
 
 #home {
-    /* background-image: url(bg.jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0.333), rgba(0, 0, 0, 0.333)), 
                 url(img/bg.jpg);
     background-size: cover;
@@ -205,22 +223,22 @@ body {
     object-fit: cover;
 }
 
-/* Hover effect on the service cards */
+
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
 .card:hover {
-    transform: translateY(-10px); /* Slight lift effect */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
   }
   
 
 
 /* BOOKING */
 .booking-container {
-  max-width: 800px; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the container */
+  max-width: 800px; 
+  margin: 0 auto; 
  
 }
 
